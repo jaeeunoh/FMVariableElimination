@@ -1,0 +1,640 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-04 03:08:30.326666 UTC
+
+interface FMelim-0.1.0.0-Dwt0JLLziKE78FhUvX5sRQ:Lib 8002
+  interface hash: 85993a155f4fd40d716d0bac7e86b795
+  ABI hash: 4d08eb2b1a9eb01311257ae74a44b5cc
+  export-list hash: b52cb9b18b4ebe9f6362487eca903dc0
+  orphan hash: 9d0de51d43fcf7475832c66d800e4122
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.check
+  Lib.checkFinal
+  Lib.combine
+  Lib.extractOne
+  Lib.normalize
+  Lib.reduce
+module dependencies: Parser Types
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      parsec-3.1.11@parsec-3.1.11-1aqiimsgq2dCv7eoaC8WuX
+                      parsec-numbers-0.1.0@parsec-numbers-0.1.0-4q09xIiPuHhIiWaXhS71N5
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+import  -/  Parser ee380d853f7ee9bab40150a2feb2cfbc
+  exports: e68139890557aae6680dcd808e418783
+import  -/  Types 8b3373d17522cbc7f23f8a033d6338f9
+  exports: eeab01c32eb63d033d37a8e8cf1f546b
+  ConstantToken 2efdc1e216140347370947f09a3484ff
+  Equation c9b75c4d59d0c7b3d9aa1649cfd59bea
+  EquationSet 43055b8553566734bb24ad050c52cb9b
+  GreaterEqual 026ab009d7d82f7d8be7d6ab21f8e8e7
+  GreaterThan 2e62a706046eda046bedd3884ab8f558
+  LessEqual c1abc59c6710bd445fffc882474750fc
+  LessThan ce20564a07f3523d75055dcfa5fc89b1
+  RawInequality 790f7814417e32c3a287d627d77e32b5
+  RawInequality 17d14a25df5f4b0f82caeae6e9fa25f0
+  ReducibleInequality c3b745c76329bbe039494f7d54031860
+  ReducibleInequality 5183b6fb7d16ee592294058a7a6086d4
+  VarToken babea54607aa68b416d7ecd8c66e4159
+  constant e98f46cef45d94175cee4af093968a8d
+  inequalityType c4d1c8f2bd9f8a71f18f78ec56feefaf
+  leftSide 6fe58cbb64dec8c3d857368607841356
+import  -/  base-4.9.1.0:Data.Either 20b09ef8d0a5b74fdec011c40c1587f5
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.Ratio 73e2d5dd51ef6c1a1767a580e2cd7459
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Err 3bba35a16538d33d424682ce66876cdd
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 0fd5c8559af8bc4b6f38b9cf9ba5a467
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base 8b155a212edaca6c85bcefe65a8bc505
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+eec7ed30aeef24f5ceb589436b0092d3
+  $sfilterGt1 ::
+    GHC.Types.Char
+    -> Data.Map.Base.Map GHC.Types.Char v
+    -> Data.Map.Base.Map GHC.Types.Char v
+  {- Arity: 2, Strictness: <L,1*U(U)><S,1*U> -}
+9107dad37197ed194ec37296e7f1eb16
+  $sfilterLt1 ::
+    GHC.Types.Char
+    -> Data.Map.Base.Map GHC.Types.Char v
+    -> Data.Map.Base.Map GHC.Types.Char v
+  {- Arity: 2, Strictness: <L,1*U(U)><S,1*U> -}
+6253cee6546d0f583f787f6b7f61d80a
+  $sfromList ::
+    [(GHC.Types.Char, a)] -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds :: [(GHC.Types.Char, a)]) ->
+                 case ds of wild {
+                   [] -> Data.Map.Base.Tip @ GHC.Types.Char @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { GHC.Types.C# ipv ->
+                           Data.Map.Base.Bin
+                             @ GHC.Types.Char
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                             (Data.Map.Base.Tip @ GHC.Types.Char @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case kx of wild4 { GHC.Types.C# c1 ->
+                           case ky of wild5 { GHC.Types.C# c2 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.geChar# c1 c2) of wild6 {
+                             GHC.Types.False
+                             -> Lib.$wpoly_go1
+                                  @ a
+                                  1#
+                                  (Data.Map.Base.Bin
+                                     @ GHC.Types.Char
+                                     @ a
+                                     1#
+                                     wild4
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a))
+                                  wild2
+                             GHC.Types.True
+                             -> Lib.$sfromList1
+                                  @ a
+                                  (Data.Map.Base.Bin
+                                     @ GHC.Types.Char
+                                     @ a
+                                     1#
+                                     wild4
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a))
+                                  wild2 } } } } } } }) -}
+92353bf23db7b14efce991aa1a0e8200
+  $sfromList1 ::
+    Data.Map.Base.Map GHC.Types.Char a1
+    -> [(GHC.Types.Char, a1)] -> Data.Map.Base.Map GHC.Types.Char a1
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+e49c3a9fcff97ba994e43120e12b7212
+  $smaximum1 :: GHC.Real.Ratio GHC.Types.Int
+  {- Strictness: x -}
+7a6bb7a2bfa0b4480b7941f589943a08
+  $sminimum1 :: GHC.Real.Ratio GHC.Types.Int
+  {- Strictness: x -}
+d8cd5a9845faced3fadc30fc674fcd52
+  $strim1 ::
+    GHC.Types.Char
+    -> GHC.Types.Char
+    -> Data.Map.Base.Map GHC.Types.Char a
+    -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(U)><L,1*U(U)><S,1*U> -}
+bb22d7983480d36ebc69b3855cf74a50
+  $strim3 ::
+    GHC.Types.Char
+    -> Data.Map.Base.Map GHC.Types.Char a
+    -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U)><S,1*U> -}
+5a89dd00d9d22bfbbde4d144ca7550bd
+  $sunionWith_$sunionWithKey ::
+    (GHC.Types.Char -> a -> a -> a)
+    -> Data.Map.Base.Map GHC.Types.Char a
+    -> Data.Map.Base.Map GHC.Types.Char a
+    -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 3, Strictness: <L,C(C1(C1(U)))><S,1*U><S,1*U> -}
+f7415bd33cda62f95d32a2218089416a
+  $sunionsWith ::
+    (a -> a -> a)
+    -> [Data.Map.Base.Map GHC.Types.Char a]
+    -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 2, Strictness: <L,C(C1(U))><S,1*U>,
+     Unfolding: (\ @ a
+                   (f :: a -> a -> a)
+                   (ts :: [Data.Map.Base.Map GHC.Types.Char a]) ->
+                 let {
+                   lvl33 :: GHC.Types.Char -> a -> a -> a {- Arity: 3 -}
+                   = \ (ds :: GHC.Types.Char) (x :: a)[OneShot] (y :: a)[OneShot] ->
+                     f x y
+                 } in
+                 letrec {
+                   go6 :: Data.Map.Base.Map GHC.Types.Char a
+                          -> [Data.Map.Base.Map GHC.Types.Char a]
+                          -> Data.Map.Base.Map GHC.Types.Char a
+                     {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+                   = \ (z :: Data.Map.Base.Map GHC.Types.Char a)
+                       (ds :: [Data.Map.Base.Map GHC.Types.Char a]) ->
+                     case ds of wild {
+                       [] -> z
+                       : x xs
+                       -> case Lib.$sunionWith_$sunionWithKey
+                                 @ a
+                                 lvl33
+                                 z
+                                 x of z' { DEFAULT ->
+                          go6 z' xs } }
+                 } in
+                 go6 (Data.Map.Base.Tip @ GHC.Types.Char @ a) ts) -}
+887ca72b4fe336214a233a7d0d59c81f
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Lib.$trModule2 Lib.$trModule1) -}
+3dbbfae8ee00dc959eb8b87d184133b8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Lib"#) -}
+fc2b40cf322abc28df056226a53dbc5e
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "FMelim-0.1.0.0-Dwt0JLLziKE78FhUvX5sRQ"#) -}
+bcb84c2bb6cbedcde26594f2ac3947c6
+  $w$sgo10 ::
+    GHC.Prim.Char#
+    -> a1
+    -> Data.Map.Base.Map GHC.Types.Char a1
+    -> Data.Map.Base.Map GHC.Types.Char a1
+  {- Arity: 3, Strictness: <L,U><L,U><S,1*U>, Inline: [0] -}
+c351263fde5a9b7e0d068bf1f1694c4b
+  $w$sgreater ::
+    GHC.Types.Char
+    -> Data.Map.Base.Map GHC.Types.Char a1
+    -> (# GHC.Base.Maybe a1, Data.Map.Base.Map GHC.Types.Char a1 #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U)><S,1*U>,
+     Inline: [0] -}
+ecbcdfe0535d459e7a6b3d3bd8d41455
+  $w$smiddle ::
+    GHC.Types.Char
+    -> GHC.Types.Char
+    -> Data.Map.Base.Map GHC.Types.Char a1
+    -> (# GHC.Base.Maybe a1, Data.Map.Base.Map GHC.Types.Char a1 #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,1*U(U)><L,1*U(U)><S,1*U>,
+     Inline: [0] -}
+dad929b5466498f9ad1b1f8f27c9a8b0
+  $wcombine ::
+    Types.ReducibleInequality
+    -> Types.ReducibleInequality
+    -> (# Data.Map.Base.Map
+            GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int),
+          GHC.Real.Ratio GHC.Types.Int, Types.InequalityType #)
+  {- Arity: 2,
+     Strictness: <L,U(1*U,1*U(U,U),1*U)><L,U(1*U,1*U(U,U),A)>,
+     Inline: [0],
+     Unfolding: (\ (w :: Types.ReducibleInequality)
+                   (w1 :: Types.ReducibleInequality) ->
+                 (# Lib.$sunionsWith
+                      @ (GHC.Real.Ratio GHC.Types.Int)
+                      Lib.combine2
+                      (GHC.Types.:
+                         @ (Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int))
+                         (Types.leftSide w)
+                         (GHC.Types.:
+                            @ (Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int))
+                            (case w1 of wild { Types.ReducibleInequality ds1 ds2 ds3 ->
+                             Data.Map.Base.map
+                               @ (GHC.Real.Ratio GHC.Types.Int)
+                               @ (GHC.Real.Ratio GHC.Types.Int)
+                               @ GHC.Types.Char
+                               Lib.combine1
+                               ds1 })
+                            (GHC.Types.[]
+                               @ (Data.Map.Base.Map
+                                    GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int))))),
+                    case w of wild { Types.ReducibleInequality ds1 ds2 ds3 ->
+                    case w1 of wild1 { Types.ReducibleInequality ds4 ds5 ds6 ->
+                    case ds2 of ww { GHC.Real.:% ww1 ww2 ->
+                    case ds5 of ww3 { GHC.Real.:% ww4 ww5 ->
+                    case GHC.Real.$w$c-
+                           @ GHC.Types.Int
+                           GHC.Real.$fIntegralInt
+                           ww1
+                           ww2
+                           ww4
+                           ww5 of ww6 { (#,#) ww7 ww8 ->
+                    GHC.Real.:% @ GHC.Types.Int ww7 ww8 } } } } },
+                    Types.inequalityType w #)) -}
+00d2231432926c6bc6691eef35f8653e
+  $wextractOne ::
+    GHC.Prim.Char#
+    -> Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+    -> GHC.Real.Ratio GHC.Types.Int
+    -> Types.InequalityType
+    -> (# Data.Map.Base.Map
+            GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int),
+          GHC.Real.Ratio GHC.Types.Int, Types.InequalityType #)
+  {- Arity: 4, Strictness: <L,U><S,U><L,U(U,U)><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Char#)
+                   (ww1 :: Data.Map.Base.Map
+                             GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int))
+                   (ww2 :: GHC.Real.Ratio GHC.Types.Int)
+                   (ww3 :: Types.InequalityType) ->
+                 case Lib.$wpoly_go3
+                        @ (GHC.Real.Ratio GHC.Types.Int)
+                        ww
+                        ww1 of wild {
+                   GHC.Types.False -> (# ww1, ww2, ww3 #)
+                   GHC.Types.True
+                   -> let {
+                        coeff :: GHC.Real.Ratio GHC.Types.Int
+                        = Lib.$wpoly_go10 @ (GHC.Real.Ratio GHC.Types.Int) ww ww1
+                      } in
+                      let {
+                        signOfVar :: GHC.Types.Bool
+                        = case coeff of ww4 { GHC.Real.:% ww5 ww6 ->
+                          case GHC.Real.$w$ccompare
+                                 @ GHC.Types.Int
+                                 GHC.Real.$fIntegralInt
+                                 ww5
+                                 ww6
+                                 Lib.extractOne1
+                                 Lib.combine_dt1 of wild1 {
+                            DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False } }
+                      } in
+                      let {
+                        $wnormalizeCoeff :: forall t.
+                                            GHC.Types.Int
+                                            -> GHC.Types.Int -> (# GHC.Types.Int, GHC.Types.Int #)
+                          {- Arity: 2, Strictness: <S,U><S,U>, Inline: [0] -}
+                        = \ @ t (ww4 :: GHC.Types.Int) (ww5 :: GHC.Types.Int) ->
+                          case GHC.Real.$w$c*
+                                 @ GHC.Types.Int
+                                 GHC.Real.$fIntegralInt
+                                 Lib.combine_dt1
+                                 Lib.combine_dt1
+                                 ww4
+                                 ww5 of ww6 { (#,#) ww7 ww8 ->
+                          case ww7 of wild1 { GHC.Types.I# x ->
+                          case coeff of ww9 { GHC.Real.:% ww10 ww11 ->
+                          GHC.Real.$w$c/
+                            @ GHC.Types.Int
+                            GHC.Real.$fIntegralInt
+                            (GHC.Types.I# (GHC.Prim.negateInt# x))
+                            ww8
+                            ww10
+                            ww11 } } }
+                      } in
+                      (# let {
+                           normalizeCoeff :: forall t.
+                                             t
+                                             -> GHC.Real.Ratio GHC.Types.Int
+                                             -> GHC.Real.Ratio GHC.Types.Int
+                             {- Arity: 2, Strictness: <L,A><S(SS),1*U(U,U)>m, Inline: INLINE[0],
+                                Unfolding: InlineRule (2, True, False)
+                                           (\ @ t (w :: t) (w1 :: GHC.Real.Ratio GHC.Types.Int) ->
+                                            case w1 of ww4 { GHC.Real.:% ww5 ww6 ->
+                                            case $wnormalizeCoeff
+                                                   @ t
+                                                   ww5
+                                                   ww6 of ww7 { (#,#) ww8 ww9 ->
+                                            GHC.Real.:% @ GHC.Types.Int ww8 ww9 } }) -}
+                           = \ @ t (w :: t) (w1 :: GHC.Real.Ratio GHC.Types.Int) ->
+                             case w1 of ww4 { GHC.Real.:% ww5 ww6 ->
+                             case $wnormalizeCoeff @ t ww5 ww6 of ww7 { (#,#) ww8 ww9 ->
+                             GHC.Real.:% @ GHC.Types.Int ww8 ww9 } }
+                         } in
+                         Data.Map.Base.filterWithKey
+                           @ GHC.Types.Char
+                           @ (GHC.Real.Ratio GHC.Types.Int)
+                           (\ (k :: GHC.Types.Char)
+                              (ds :: GHC.Real.Ratio GHC.Types.Int)[OneShot] ->
+                            case k of wild1 { GHC.Types.C# x ->
+                            GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.neChar# x ww) })
+                           (Data.Map.Base.map
+                              @ (GHC.Real.Ratio GHC.Types.Int)
+                              @ (GHC.Real.Ratio GHC.Types.Int)
+                              @ GHC.Types.Char
+                              (normalizeCoeff @ GHC.Types.Bool signOfVar)
+                              ww1),
+                         case ww2 of ww4 { GHC.Real.:% ww5 ww6 ->
+                         case $wnormalizeCoeff
+                                @ GHC.Types.Bool
+                                ww5
+                                ww6 of ww7 { (#,#) ww8 ww9 ->
+                         GHC.Real.:% @ GHC.Types.Int ww8 ww9 } },
+                         case signOfVar of wild1 {
+                           GHC.Types.False -> ww3
+                           GHC.Types.True
+                           -> case ww3 of wild2 {
+                                Types.LessThan -> Types.GreaterThan
+                                Types.GreaterThan -> Types.LessThan
+                                Types.LessEqual -> Types.GreaterEqual
+                                Types.GreaterEqual -> Types.LessEqual
+                                Types.Equation -> Types.Equation } } #) }) -}
+bc5b9f7a419c11a85f64f226aca92351
+  $wgo ::
+    [GHC.Real.Ratio GHC.Types.Int]
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> (# GHC.Types.Int, GHC.Types.Int #)
+  {- Arity: 3, Strictness: <S,1*U><L,U><L,U>, Inline: [0] -}
+dae4d40e18a20bb562c6222a4dbf5660
+  $wgo1 ::
+    [GHC.Real.Ratio GHC.Types.Int]
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> (# GHC.Types.Int, GHC.Types.Int #)
+  {- Arity: 3, Strictness: <S,1*U><L,U><L,U>, Inline: [0] -}
+4c8153feab76a4f107a66b7cc5bd0f7f
+  $wgo2 :: [Types.Token] -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>, Inline: [0] -}
+cd3e8ccaff9b3ac72538441c07faab8f
+  $wgo3 :: [Types.Token] -> GHC.Prim.Int# -> GHC.Prim.Int#
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>, Inline: [0] -}
+334a6cc7a742344c277624147b4d8019
+  $wnormalize ::
+    Types.Side
+    -> Types.Side
+    -> GHC.Base.String
+    -> (# Data.Map.Base.Map
+            GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int),
+          GHC.Real.Ratio GHC.Types.Int, Types.InequalityType #)
+  {- Arity: 3, Strictness: <L,U><L,U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: Types.Side)
+                   (ww1 :: Types.Side)
+                   (ww2 :: GHC.Base.String) ->
+                 (# let {
+                      z :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+                      = Lib.normalize_go ww1
+                    } in
+                    letrec {
+                      go6 :: [Types.Token]
+                             -> [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+                        {- Arity: 1, Strictness: <S,1*U> -}
+                      = \ (ds :: [Types.Token]) ->
+                        case ds of wild {
+                          [] -> z
+                          : y ys
+                          -> case y of wild1 {
+                               Types.VarToken ds1 ds2
+                               -> GHC.Types.:
+                                    @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                                    (ds2,
+                                     case GHC.Real.$w%
+                                            @ GHC.Types.Int
+                                            GHC.Real.$fIntegralInt
+                                            ds1
+                                            Lib.combine_dt1 of ww3 { (#,#) ww4 ww5 ->
+                                     GHC.Real.:% @ GHC.Types.Int ww4 ww5 })
+                                    (go6 ys)
+                               Types.ConstantToken ipv -> go6 ys } }
+                    } in
+                    Lib.$sfromList @ (GHC.Real.Ratio GHC.Types.Int) (go6 ww),
+                    case GHC.Real.$w%
+                           @ GHC.Types.Int
+                           GHC.Real.$fIntegralInt
+                           (case Lib.$wgo3 ww 0# of ww3 { DEFAULT ->
+                            case Lib.$wgo2 ww1 0# of ww4 { DEFAULT ->
+                            GHC.Types.I# (GHC.Prim.-# ww3 ww4) } })
+                           Lib.combine_dt1 of ww3 { (#,#) ww4 ww5 ->
+                    GHC.Real.:% @ GHC.Types.Int ww4 ww5 },
+                    let {
+                      fail1 :: GHC.Prim.Void# -> Types.InequalityType
+                        {- Arity: 1, Strictness: <L,A> -}
+                      = \ (ds :: GHC.Prim.Void#)[OneShot] ->
+                        case GHC.Base.eqString ww2 Lib.normalize3 of wild {
+                          GHC.Types.False
+                          -> case GHC.Base.eqString ww2 Lib.normalize2 of wild1 {
+                               GHC.Types.False
+                               -> case ww2 of wild2 {
+                                    [] -> Lib.normalize1
+                                    : ds1 ds2
+                                    -> case ds1 of wild3 { GHC.Types.C# ds3 ->
+                                       case ds3 of ds4 {
+                                         DEFAULT -> Lib.normalize1
+                                         '='#
+                                         -> case ds2 of wild4 {
+                                              [] -> Types.Equation
+                                              : ipv ipv1 -> Lib.normalize1 } } } }
+                               GHC.Types.True -> Types.GreaterEqual }
+                          GHC.Types.True -> Types.LessEqual }
+                    } in
+                    case ww2 of wild {
+                      [] -> fail1 GHC.Prim.void#
+                      : ds ds1
+                      -> case ds of wild1 { GHC.Types.C# ds2 ->
+                         case ds2 of ds3 {
+                           DEFAULT -> fail1 GHC.Prim.void#
+                           '<'#
+                           -> case ds1 of wild2 {
+                                [] -> Types.LessThan : ipv ipv1 -> fail1 GHC.Prim.void# }
+                           '>'#
+                           -> case ds1 of wild2 {
+                                [] -> Types.GreaterThan
+                                : ipv ipv1 -> fail1 GHC.Prim.void# } } } } #)) -}
+fdcae24a5009530a4473ae3d50c20ea5
+  $wpoly_go1 ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map GHC.Types.Char a
+    -> [(GHC.Types.Char, a)]
+    -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+7ad299178d6c63c528bad8d48b235d00
+  $wpoly_go10 ::
+    GHC.Prim.Char# -> Data.Map.Base.Map GHC.Types.Char a -> a
+  {- Arity: 2, Strictness: <S,U><S,1*U>, Inline: [0] -}
+ad437d67438859c4c00f99649030e0a4
+  $wpoly_go2 ::
+    GHC.Prim.Char#
+    -> Data.Map.Base.Map GHC.Types.Char a -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>, Inline: [0] -}
+6518f9ad8bc592f5ec33255064306243
+  $wpoly_go3 ::
+    GHC.Prim.Char#
+    -> Data.Map.Base.Map GHC.Types.Char a -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>, Inline: [0] -}
+1f2c3cbaa06ff06877a64381f56aa3e7
+  check :: Types.EquationSet -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,1*U> -}
+21943540076b895e95c83f0e18b9eb75
+  checkFinal :: Types.EquationSet -> GHC.Types.Bool
+  {- Arity: 1, Strictness: <S,U> -}
+2ae1044a5308e57dd7fc332dd9605a82
+  combine ::
+    Types.ReducibleInequality
+    -> Types.ReducibleInequality -> Types.ReducibleInequality
+  {- Arity: 2,
+     Strictness: <L,U(1*U,1*U(U,U),1*U)><L,U(1*U,1*U(U,U),A)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Types.ReducibleInequality)
+                   (w1 :: Types.ReducibleInequality) ->
+                 case Lib.$wcombine w w1 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Types.ReducibleInequality ww1 ww2 ww3 }) -}
+2652cad89ba1b4d0b3e73aaa1d791ede
+  combine1 ::
+    GHC.Real.Ratio GHC.Types.Int -> GHC.Real.Ratio GHC.Types.Int
+  {- Arity: 1, Strictness: <S(SS),1*U(U,U)>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Real.Ratio GHC.Types.Int) ->
+                 case w of ww { GHC.Real.:% ww1 ww2 ->
+                 case GHC.Real.$w$c*
+                        @ GHC.Types.Int
+                        GHC.Real.$fIntegralInt
+                        ww1
+                        ww2
+                        Lib.combine_dt
+                        Lib.combine_dt1 of ww3 { (#,#) ww4 ww5 ->
+                 GHC.Real.:% @ GHC.Types.Int ww4 ww5 } }) -}
+eb8fe05e00e4ab79c7fa1221fcd67339
+  combine2 ::
+    GHC.Real.Ratio GHC.Types.Int
+    -> GHC.Real.Ratio GHC.Types.Int -> GHC.Real.Ratio GHC.Types.Int
+  {- Arity: 2, Strictness: <S(SS),1*U(U,U)><S(SS),1*U(U,U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Real.Ratio GHC.Types.Int)
+                   (w1 :: GHC.Real.Ratio GHC.Types.Int) ->
+                 case w of ww { GHC.Real.:% ww1 ww2 ->
+                 case w1 of ww3 { GHC.Real.:% ww4 ww5 ->
+                 case GHC.Real.$w$c+
+                        @ GHC.Types.Int
+                        GHC.Real.$fIntegralInt
+                        ww1
+                        ww2
+                        ww4
+                        ww5 of ww6 { (#,#) ww7 ww8 ->
+                 GHC.Real.:% @ GHC.Types.Int ww7 ww8 } } }) -}
+7e3f53d96c8cb2efd945a1b4f598c0eb
+  combine_dt :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# -1#) -}
+52ac9a98e7909c1ee1adfdd60c23292d
+  combine_dt1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+deaa7b489ffacd9b35051fc0d8f51fd1
+  extractOne ::
+    GHC.Types.Char
+    -> Types.ReducibleInequality -> Types.ReducibleInequality
+  {- Arity: 2, Strictness: <S,U(U)><S(SLL),1*U(U,U(U,U),U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Char) (w1 :: Types.ReducibleInequality) ->
+                 case w of ww { GHC.Types.C# ww1 ->
+                 case w1 of ww2 { Types.ReducibleInequality ww3 ww4 ww5 ->
+                 case Lib.$wextractOne
+                        ww1
+                        ww3
+                        ww4
+                        ww5 of ww6 { (#,,#) ww7 ww8 ww9 ->
+                 Types.ReducibleInequality ww7 ww8 ww9 } } }) -}
+f8652ba56ce0f73bc4f52e8b53d0d42f
+  extractOne1 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 0#) -}
+241c1f9ce326ea40c52f755771a99827
+  normalize :: Types.RawInequality -> Types.ReducibleInequality
+  {- Arity: 1, Strictness: <S,1*U(U,U,U)>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Types.RawInequality) ->
+                 case w of ww { Types.RawInequality ww1 ww2 ww3 ->
+                 case Lib.$wnormalize ww1 ww2 ww3 of ww4 { (#,,#) ww5 ww6 ww7 ->
+                 Types.ReducibleInequality ww5 ww6 ww7 } }) -}
+bc1969b7aa363e2b13df5d798f77baed
+  normalize1 :: Types.InequalityType
+  {- Strictness: x -}
+5f0416501187e3341c752080c0176add
+  normalize2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ">="#) -}
+085dadc6fd6ab2cbe5e79160b4e5e4b4
+  normalize3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "<="#) -}
+815f3870e0f4f01865590e8b5084ea77
+  normalize_go ::
+    [Types.Token] -> [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- Arity: 1, Strictness: <S,1*U> -}
+a538d9e3948ece06573eaaf5e51b85a1
+  reduce :: Types.EquationSet -> Types.EquationSet
+  {- Arity: 1, Strictness: <S,U> -}
+"SPEC/Lib fromList @ Char _" [ALWAYS] forall @ a
+                                             ($dOrd :: GHC.Classes.Ord GHC.Types.Char)
+  Data.Map.Base.fromList @ GHC.Types.Char @ a $dOrd
+  = Lib.$sfromList @ a
+"SPEC/Lib unionWithKey @ Char _" [ALWAYS] forall @ a
+                                                 ($dOrd :: GHC.Classes.Ord GHC.Types.Char)
+  Data.Map.Base.unionWithKey @ GHC.Types.Char @ a $dOrd
+  = Lib.$sunionWith_$sunionWithKey @ a
+"SPEC/Lib unionsWith @ Char _" [ALWAYS] forall @ a
+                                               ($dOrd :: GHC.Classes.Ord GHC.Types.Char)
+  Data.Map.Base.unionsWith @ GHC.Types.Char @ a $dOrd
+  = Lib.$sunionsWith @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

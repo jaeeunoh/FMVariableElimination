@@ -1,0 +1,1168 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-04 03:12:45.449176 UTC
+
+interface main@main:TestSets 8002
+  interface hash: 244bafc5ef4d7b0f710a31492dce17e9
+  ABI hash: abd106135c0ca299fa159a7bd3e88dba
+  export-list hash: 5292e6a5dc664dff5d4d0e0c91f5ef28
+  orphan hash: f5647f2d612b0c781be79f1dd6b130a5
+  flag hash: 51e1c96d3b3938be30f5120e5e8cbb5f
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  TestSets.endEndSet2
+  TestSets.endSet
+  TestSets.endSet2
+  TestSets.endSet3
+  TestSets.startSet
+  TestSets.startSet2
+  TestSets.startSet3
+  TestSets.startSet4
+module dependencies:
+package dependencies: FMelim-0.1.0.0@FMelim-0.1.0.0-Dwt0JLLziKE78FhUvX5sRQ
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      parsec-3.1.11@parsec-3.1.11-1aqiimsgq2dCv7eoaC8WuX
+                      parsec-numbers-0.1.0@parsec-numbers-0.1.0-4q09xIiPuHhIiWaXhS71N5
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+import  -/  FMelim-0.1.0.0@FMelim-0.1.0.0-Dwt0JLLziKE78FhUvX5sRQ:Types 8b3373d17522cbc7f23f8a033d6338f9
+import  -/  FMelim-0.1.0.0@FMelim-0.1.0.0-Dwt0JLLziKE78FhUvX5sRQ:Util add2b9a98ba499d7ece66e071f86f40e
+import  -/  base-4.9.1.0:Data.Ratio 73e2d5dd51ef6c1a1767a580e2cd7459
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 0fd5c8559af8bc4b6f38b9cf9ba5a467
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base 8b155a212edaca6c85bcefe65a8bc505
+c765c342eb7945b040d8543428432a30
+  $sfromList ::
+    [(GHC.Types.Char, a)] -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds :: [(GHC.Types.Char, a)]) ->
+                 case ds of wild {
+                   [] -> Data.Map.Base.Tip @ GHC.Types.Char @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { GHC.Types.C# ipv ->
+                           Data.Map.Base.Bin
+                             @ GHC.Types.Char
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                             (Data.Map.Base.Tip @ GHC.Types.Char @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case kx of wild4 { GHC.Types.C# c1 ->
+                           case ky of wild5 { GHC.Types.C# c2 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.geChar# c1 c2) of wild6 {
+                             GHC.Types.False
+                             -> TestSets.$wpoly_go10
+                                  @ a
+                                  1#
+                                  (Data.Map.Base.Bin
+                                     @ GHC.Types.Char
+                                     @ a
+                                     1#
+                                     wild4
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a))
+                                  wild2
+                             GHC.Types.True
+                             -> TestSets.$sfromList1
+                                  @ a
+                                  (Data.Map.Base.Bin
+                                     @ GHC.Types.Char
+                                     @ a
+                                     1#
+                                     wild4
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a))
+                                  wild2 } } } } } } }) -}
+f68a43a418c0aec5081bbf6c6431c300
+  $sfromList1 ::
+    Data.Map.Base.Map GHC.Types.Char a1
+    -> [(GHC.Types.Char, a1)] -> Data.Map.Base.Map GHC.Types.Char a1
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+38ca13b8d2372623ae4f3de2523214e8
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   TestSets.$trModule2
+                   TestSets.$trModule1) -}
+896a7ca9115db178079aaf27a5c5a025
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "TestSets"#) -}
+7370cf36a440ed31984ce829d9710f47
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+30c8e344e25baa0c2a1ebf5155adf5e4
+  $w$sgo10 ::
+    GHC.Prim.Char#
+    -> a1
+    -> Data.Map.Base.Map GHC.Types.Char a1
+    -> Data.Map.Base.Map GHC.Types.Char a1
+  {- Arity: 3, Strictness: <L,U><L,U><S,1*U>, Inline: [0] -}
+992a7d3ba9c6b49377b5070064490f1d
+  $wpoly_go10 ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map GHC.Types.Char a
+    -> [(GHC.Types.Char, a)]
+    -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+513ead2bf84f520a27562ff4546da157
+  endEndSet1 :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.endEndSet23
+                   TestSets.endEndSet3) -}
+92f0fcf4bd7ffd4c3d349b303b755734
+  endEndSet10 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- Unfolding: ((TestSets.endEndSet13, TestSets.endEndSet11)) -}
+f7857e21a9c134949b99af1772d93a5f
+  endEndSet11 :: GHC.Real.Ratio GHC.Types.Int
+  {- Unfolding: (case GHC.Real.$w%
+                        @ GHC.Types.Int
+                        GHC.Real.$fIntegralInt
+                        TestSets.endEndSet12
+                        TestSets.endEndSet2_dt of ww { (#,#) ww1 ww2 ->
+                 GHC.Real.:% @ GHC.Types.Int ww1 ww2 }) -}
+107110dd070c62296dc3b6d6ee482d6a
+  endEndSet12 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# -23#) -}
+8b2d4e2b1042b9bf51b1dc94d5ccf99e
+  endEndSet13 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'z'#) -}
+cad071a980a851ca87721c8f3a73f2fd
+  endEndSet14 :: Types.ReducibleInequality
+  {- Strictness: m,
+     Unfolding: (Types.ReducibleInequality
+                   TestSets.endEndSet18
+                   TestSets.endEndSet15
+                   Types.GreaterEqual) -}
+29a1709152ee5a2b97e028e4d80985af
+  endEndSet15 :: GHC.Real.Ratio GHC.Types.Int
+  {- Unfolding: (case GHC.Real.$w%
+                        @ GHC.Types.Int
+                        GHC.Real.$fIntegralInt
+                        TestSets.endEndSet17
+                        TestSets.endEndSet16 of ww { (#,#) ww1 ww2 ->
+                 GHC.Real.:% @ GHC.Types.Int ww1 ww2 }) -}
+e280fb8e3f5aba51df73854d0c7b6308
+  endEndSet16 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 33#) -}
+734503eaee0341c8c3c220d1e0478b23
+  endEndSet17 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 118#) -}
+c9177c30a50938af99deb7edaebfe241
+  endEndSet18 ::
+    Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+  {- Unfolding: (TestSets.$sfromList
+                   @ (GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.endEndSet19) -}
+504f46d0263b6d95257cd6f062c80050
+  endEndSet19 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.endEndSet20
+                   (GHC.Types.[] @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int))) -}
+32e9e9332424a5a9dbb20d5f2ab0e9bc
+  endEndSet2 :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.endEndSet33
+                   TestSets.endEndSet1) -}
+20ea316eede5e0ad5364496a8bb12774
+  endEndSet20 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- Unfolding: ((TestSets.endEndSet13, TestSets.endEndSet21)) -}
+c63082e7d8d369cfb5dfe90d417e690c
+  endEndSet21 :: GHC.Real.Ratio GHC.Types.Int
+  {- Unfolding: (case GHC.Real.$w%
+                        @ GHC.Types.Int
+                        GHC.Real.$fIntegralInt
+                        TestSets.endEndSet22
+                        TestSets.endEndSet16 of ww { (#,#) ww1 ww2 ->
+                 GHC.Real.:% @ GHC.Types.Int ww1 ww2 }) -}
+ac884655361f345d57f6c51c13817698
+  endEndSet22 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# -61#) -}
+91364fba751a7289febdf1bacc8b371f
+  endEndSet23 :: Types.ReducibleInequality
+  {- Strictness: m,
+     Unfolding: (Types.ReducibleInequality
+                   TestSets.endEndSet27
+                   TestSets.endEndSet24
+                   Types.GreaterEqual) -}
+0849deb774f61facfa8543bac4894a1c
+  endEndSet24 :: GHC.Real.Ratio GHC.Types.Int
+  {- Unfolding: (case GHC.Real.$w%
+                        @ GHC.Types.Int
+                        GHC.Real.$fIntegralInt
+                        TestSets.endEndSet26
+                        TestSets.endEndSet25 of ww { (#,#) ww1 ww2 ->
+                 GHC.Real.:% @ GHC.Types.Int ww1 ww2 }) -}
+a7bbeb1625ca41bd65fee143a2e7fd6c
+  endEndSet25 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 20#) -}
+a12ded069073543605545453ed2873b2
+  endEndSet26 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 89#) -}
+bf3c6669245f019253ad59ea1b3ce528
+  endEndSet27 ::
+    Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+  {- Unfolding: (TestSets.$sfromList
+                   @ (GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.endEndSet28) -}
+40b9367d3f41ecaf11bb207b3558744a
+  endEndSet28 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.endEndSet29
+                   (GHC.Types.[] @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int))) -}
+456ede144129a8eb029a50716338e2d7
+  endEndSet29 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- Unfolding: ((TestSets.endEndSet13, TestSets.endEndSet30)) -}
+d9fc12c73b1bef10c6fa24cdde5913b1
+  endEndSet2_dt :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 12#) -}
+8b93d8a5f2451624c3d483960646861d
+  endEndSet3 :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.endEndSet14
+                   TestSets.endEndSet4) -}
+b59df9730dc5930e681b810628ae2d77
+  endEndSet30 :: GHC.Real.Ratio GHC.Types.Int
+  {- Unfolding: (case GHC.Real.$w%
+                        @ GHC.Types.Int
+                        GHC.Real.$fIntegralInt
+                        TestSets.endEndSet32
+                        TestSets.endEndSet31 of ww { (#,#) ww1 ww2 ->
+                 GHC.Real.:% @ GHC.Types.Int ww1 ww2 }) -}
+d4903cb8c5ba8228726e9fcf41fad77e
+  endEndSet31 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 4#) -}
+f70187492d4f6aaaa142bebc9dfc171d
+  endEndSet32 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# -9#) -}
+8f920a833df363ca328f7f05fc0e6e76
+  endEndSet33 :: Types.ReducibleInequality
+  {- Strictness: m,
+     Unfolding: (Types.ReducibleInequality
+                   TestSets.endEndSet37
+                   TestSets.endEndSet34
+                   Types.GreaterEqual) -}
+07a59ea4c9d8b06f275f8035cdf85ab5
+  endEndSet34 :: GHC.Real.Ratio GHC.Types.Int
+  {- Unfolding: (case GHC.Real.$w%
+                        @ GHC.Types.Int
+                        GHC.Real.$fIntegralInt
+                        TestSets.endEndSet36
+                        TestSets.endEndSet35 of ww { (#,#) ww1 ww2 ->
+                 GHC.Real.:% @ GHC.Types.Int ww1 ww2 }) -}
+97731499ca7c99451e6453dd7d95da4a
+  endEndSet35 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 55#) -}
+d3d41072dfc6d658f4f8e5b2c1770e35
+  endEndSet36 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 226#) -}
+8c8b42dba44836c5d68e2326d4e9e6fa
+  endEndSet37 ::
+    Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+  {- Unfolding: (TestSets.$sfromList
+                   @ (GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.endEndSet38) -}
+8d2703d5998c77040032d677ba522fde
+  endEndSet38 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.endEndSet39
+                   (GHC.Types.[] @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int))) -}
+ffc8e7a9a465f670704d89638cec102e
+  endEndSet39 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- Unfolding: ((TestSets.endEndSet13, TestSets.endEndSet40)) -}
+0895661cf238fa248d7648386de1ed2d
+  endEndSet4 :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.endEndSet5
+                   (GHC.Types.[] @ Types.ReducibleInequality)) -}
+f57ea4fbe200c53fd30e31e6a3c3131e
+  endEndSet40 :: GHC.Real.Ratio GHC.Types.Int
+  {- Unfolding: (case GHC.Real.$w%
+                        @ GHC.Types.Int
+                        GHC.Real.$fIntegralInt
+                        TestSets.endEndSet42
+                        TestSets.endEndSet41 of ww { (#,#) ww1 ww2 ->
+                 GHC.Real.:% @ GHC.Types.Int ww1 ww2 }) -}
+db7fa53fd9c3e2b87bdb628afc0731e8
+  endEndSet41 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 11#) -}
+eb523b0e6632bd0fbe20d516aafd0e87
+  endEndSet42 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# -24#) -}
+8aeea9a1f754460c84967ae5929c98c0
+  endEndSet5 :: Types.ReducibleInequality
+  {- Strictness: m,
+     Unfolding: (Types.ReducibleInequality
+                   TestSets.endEndSet8
+                   TestSets.endEndSet6
+                   Types.GreaterEqual) -}
+e6a15ed4641854e830448b05d913e969
+  endEndSet6 :: GHC.Real.Ratio GHC.Types.Int
+  {- Unfolding: (case GHC.Real.$w%
+                        @ GHC.Types.Int
+                        GHC.Real.$fIntegralInt
+                        TestSets.endEndSet7
+                        TestSets.endEndSet2_dt of ww { (#,#) ww1 ww2 ->
+                 GHC.Real.:% @ GHC.Types.Int ww1 ww2 }) -}
+56962cee7a4c39538508b0c3b959e099
+  endEndSet7 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 47#) -}
+9fdb547badb8a0ee16c4c7e68d882422
+  endEndSet8 ::
+    Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+  {- Unfolding: (TestSets.$sfromList
+                   @ (GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.endEndSet9) -}
+3350e5ce2df949340abded6340396437
+  endEndSet9 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.endEndSet10
+                   (GHC.Types.[] @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int))) -}
+a134ff74909bbcd3811a64044d8019b4
+  endSet :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.endSet1
+                   (GHC.Types.[] @ Types.ReducibleInequality)) -}
+ffd217caac83fe5c7c1190a41f5e6a74
+  endSet1 :: Types.ReducibleInequality
+  {- Strictness: m,
+     Unfolding: (Types.ReducibleInequality
+                   TestSets.endSet7
+                   TestSets.endSet5
+                   Types.GreaterEqual) -}
+2e51fdf128cb67fa16c4c8d032b76653
+  endSet10 :: GHC.Real.Ratio GHC.Types.Int
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Types.Int
+                   TestSets.endEndSet31
+                   TestSets.endSet6) -}
+3510f1cfa1c761ad84a79fe6559fa35e
+  endSet11 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'y'#) -}
+ac872a85992dbb93ebe1497c4ea9bfb5
+  endSet12 :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.endSet35
+                   TestSets.endSet13) -}
+77c427b6d3f89b6b6b85b49604772b6d
+  endSet13 :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.endSet26
+                   TestSets.endSet14) -}
+07b9b26cc044fdd6a5bd49d34f43fca3
+  endSet14 :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.endSet15
+                   (GHC.Types.[] @ Types.ReducibleInequality)) -}
+1f58ca07f38185efe1200adaec06083a
+  endSet15 :: Types.ReducibleInequality
+  {- Strictness: m,
+     Unfolding: (Types.ReducibleInequality
+                   TestSets.endSet17
+                   TestSets.endSet16
+                   Types.GreaterEqual) -}
+c650daed330b76068735867ed4a3b8c7
+  endSet16 :: GHC.Real.Ratio GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Types.Int
+                   TestSets.endSet2_dt
+                   TestSets.endSet6) -}
+40df775420955a6a3aff4e828c657b4e
+  endSet17 ::
+    Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+  {- Unfolding: (TestSets.$sfromList
+                   @ (GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.endSet18) -}
+4e5d8c7ba4ca1898befa379935469a74
+  endSet18 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.endSet23
+                   TestSets.endSet19) -}
+715219319d6fa41acbf0cdb4f3b9b301
+  endSet19 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.endSet20
+                   (GHC.Types.[] @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int))) -}
+d539f7af8c740c8e82920d128524fd32
+  endSet2 :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.endSet44
+                   TestSets.endSet12) -}
+58e8ad5baad556458c9ac67a413f2fcc
+  endSet20 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((TestSets.endEndSet13, TestSets.endSet21)) -}
+a4346638a60ebb4a5357bfa958086c5d
+  endSet21 :: GHC.Real.Ratio GHC.Types.Int
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Types.Int
+                   TestSets.endSet22
+                   TestSets.endSet6) -}
+b09100592d9ed9ffb5d22e2dd12fc934
+  endSet22 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# -3#) -}
+2c10f439a832553e1b0e576a9a808ba1
+  endSet23 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- Unfolding: ((TestSets.endSet11, TestSets.endSet24)) -}
+8b17f8cbb8d12b2a43c2f6846bc86e15
+  endSet24 :: GHC.Real.Ratio GHC.Types.Int
+  {- Unfolding: (case GHC.Real.$w%
+                        @ GHC.Types.Int
+                        GHC.Real.$fIntegralInt
+                        TestSets.endEndSet31
+                        TestSets.endSet25 of ww { (#,#) ww1 ww2 ->
+                 GHC.Real.:% @ GHC.Types.Int ww1 ww2 }) -}
+303be0846819af7dda7ae91c0c4756a9
+  endSet25 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 3#) -}
+fcfe81ab2fd65ff66cc75d29279d3f4a
+  endSet26 :: Types.ReducibleInequality
+  {- Strictness: m,
+     Unfolding: (Types.ReducibleInequality
+                   TestSets.endSet29
+                   TestSets.endSet27
+                   Types.GreaterEqual) -}
+55b29b689bded08df6321186279f70c3
+  endSet27 :: GHC.Real.Ratio GHC.Types.Int
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Types.Int
+                   TestSets.endSet28
+                   TestSets.endSet6) -}
+591c2e1a5d39bcc0fdece844ddd01d9c
+  endSet28 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# -4#) -}
+3a9650b3492b455df07b18d47fc317b2
+  endSet29 ::
+    Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+  {- Unfolding: (TestSets.$sfromList
+                   @ (GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.endSet30) -}
+495cee0be0cc0bd2faf8c8c9aa37e201
+  endSet2_dt :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 7#) -}
+487a44392dca2e564914494c4c07baae
+  endSet2_dt1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 9#) -}
+6d21dac135979a06c1a1ddf33561e27c
+  endSet2_dt2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+4c436a6f4490d2e34af6839a8dfe3305
+  endSet3 :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.endSet59
+                   TestSets.endSet56) -}
+5afadf2d7c75999c09ace00b6465530d
+  endSet30 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.endSet34
+                   TestSets.endSet31) -}
+d6daa9d4e5764552765e11c341bba31b
+  endSet31 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.endSet32
+                   (GHC.Types.[] @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int))) -}
+68b0e23d2474f459ad22774e248327bc
+  endSet32 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((TestSets.endEndSet13, TestSets.endSet33)) -}
+2cb749d5a6fbbd4a5d948da06a0bdfbe
+  endSet33 :: GHC.Real.Ratio GHC.Types.Int
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Types.Int
+                   TestSets.endSet6
+                   TestSets.endSet6) -}
+50233edba4144d1cac49d4ec4edcbaa3
+  endSet34 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((TestSets.endSet11, TestSets.endSet21)) -}
+133b92ad8540f3582ba141bc7c152b46
+  endSet35 :: Types.ReducibleInequality
+  {- Strictness: m,
+     Unfolding: (Types.ReducibleInequality
+                   TestSets.endSet37
+                   TestSets.endSet36
+                   Types.GreaterEqual) -}
+ef5e86937e0b035931ba6e176981513a
+  endSet36 :: GHC.Real.Ratio GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Types.Int
+                   TestSets.endSet2_dt1
+                   TestSets.endSet6) -}
+ed7ab37a31c1e03e618f8e5ccde13045
+  endSet37 ::
+    Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+  {- Unfolding: (TestSets.$sfromList
+                   @ (GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.endSet38) -}
+12a8ebaa65abfe3966ebf9bf38fa5cc0
+  endSet38 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.endSet41
+                   TestSets.endSet39) -}
+b8a75ccc52183ee2543bfd01ca56b85b
+  endSet39 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.endSet40
+                   (GHC.Types.[] @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int))) -}
+523d174562094cc335bcf13589fbfc1d
+  endSet40 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((TestSets.endEndSet13, TestSets.endSet27)) -}
+8a07de895c37fd2eba0fbc6df54a10a6
+  endSet41 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- Unfolding: ((TestSets.endSet11, TestSets.endSet42)) -}
+da3b368d1a3acb32d5979877dce27bf5
+  endSet42 :: GHC.Real.Ratio GHC.Types.Int
+  {- Unfolding: (case GHC.Real.$w%
+                        @ GHC.Types.Int
+                        GHC.Real.$fIntegralInt
+                        TestSets.endEndSet41
+                        TestSets.endSet43 of ww { (#,#) ww1 ww2 ->
+                 GHC.Real.:% @ GHC.Types.Int ww1 ww2 }) -}
+131917c329cd1b1eaa97f90a9a746706
+  endSet43 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 6#) -}
+d0833c3262178d01c8033b72124de2fb
+  endSet44 :: Types.ReducibleInequality
+  {- Strictness: m,
+     Unfolding: (Types.ReducibleInequality
+                   TestSets.endSet47
+                   TestSets.endSet45
+                   Types.GreaterEqual) -}
+eccf473db0078ac60fb6d463422a6542
+  endSet45 :: GHC.Real.Ratio GHC.Types.Int
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Types.Int
+                   TestSets.endSet46
+                   TestSets.endSet6) -}
+48178a4c53fb1f1411d6691583118001
+  endSet46 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# -2#) -}
+d4cf562b7ffbdbe586aa0dfb170f2752
+  endSet47 ::
+    Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+  {- Unfolding: (TestSets.$sfromList
+                   @ (GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.endSet48) -}
+df4a6b34dcd12825de267f229def96d5
+  endSet48 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.endSet52
+                   TestSets.endSet49) -}
+1a9e738f2c011a7892474b43c2832746
+  endSet49 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.endSet50
+                   (GHC.Types.[] @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int))) -}
+8fdf7126c067ccffd3a230007ae8c885
+  endSet5 :: GHC.Real.Ratio GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Types.Int
+                   TestSets.endSet_dt
+                   TestSets.endSet6) -}
+39598abe612c9de61355b8b92a86d313
+  endSet50 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((TestSets.endEndSet13, TestSets.endSet51)) -}
+3ca4547864afcdce6ff6748b3b90cfa6
+  endSet51 :: GHC.Real.Ratio GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Types.Int
+                   TestSets.endSet2_dt2
+                   TestSets.endSet6) -}
+5bc13aac04cba363d97652dacbdff18d
+  endSet52 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- Unfolding: ((TestSets.endSet11, TestSets.endSet53)) -}
+2997a6ff3639244b05d237d839d4489f
+  endSet53 :: GHC.Real.Ratio GHC.Types.Int
+  {- Unfolding: (case GHC.Real.$w%
+                        @ GHC.Types.Int
+                        GHC.Real.$fIntegralInt
+                        TestSets.endSet55
+                        TestSets.endSet54 of ww { (#,#) ww1 ww2 ->
+                 case ww1 of wild { GHC.Types.I# x ->
+                 GHC.Real.:%
+                   @ GHC.Types.Int
+                   (GHC.Types.I# (GHC.Prim.negateInt# x))
+                   ww2 } }) -}
+10608615da32fb02eda955e77b5e6c3a
+  endSet54 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 2#) -}
+487e7bf3732619d9b5efb007552de237
+  endSet55 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 5#) -}
+67e75fd44ce98ad8a2f954922f794160
+  endSet56 :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.endSet57
+                   (GHC.Types.[] @ Types.ReducibleInequality)) -}
+1100774775991d928c865448d99bee24
+  endSet57 :: Types.ReducibleInequality
+  {- Unfolding: (case Util.$wprs
+                        TestSets.endSet58 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Types.ReducibleInequality ww1 ww2 ww3 }) -}
+014fcd5ee9a32cd6120bd0c3fa7614c8
+  endSet58 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "1x -5 >= 0"#) -}
+a8e7c490df8334f95c4dab0723183d6c
+  endSet59 :: Types.ReducibleInequality
+  {- Unfolding: (case Util.$wprs
+                        TestSets.endSet60 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Types.ReducibleInequality ww1 ww2 ww3 }) -}
+51ac8bcc0c7e933cd325647f42af237d
+  endSet6 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 1#) -}
+e334a68e73fffbfcf629e65bf3f18143
+  endSet60 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "-1x +25 >= 0"#) -}
+8cfac58fa441ccafe2e731e1d9dc351b
+  endSet7 ::
+    Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+  {- Unfolding: (TestSets.$sfromList
+                   @ (GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.endSet8) -}
+34208a1a40129f8bae87fe46c8f1fc8f
+  endSet8 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.endSet9
+                   (GHC.Types.[] @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int))) -}
+f926ea8f8d370868399c0ce8ea5e77fe
+  endSet9 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((TestSets.endSet11, TestSets.endSet10)) -}
+b88d7d38b3b95af32a535d5a436cec77
+  endSet_dt :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# -10#) -}
+716764b06398aaf8c4343a3d26597877
+  startSet :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.startSet13
+                   TestSets.startSet1) -}
+39aa76df7231baf51467a8fa3b0de611
+  startSet1 :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.startSet5
+                   (GHC.Types.[] @ Types.ReducibleInequality)) -}
+0d9c1747b0f35101afab6b10f426e71c
+  startSet10 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((TestSets.endSet11, TestSets.endSet45)) -}
+8536d59ee43045005b7726fd80252223
+  startSet11 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((TestSets.startSet12, TestSets.endSet33)) -}
+b95f54230d920365abbbaa1464a7bdf7
+  startSet12 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'x'#) -}
+c8d18ae6597fa7c32beacde01fc72384
+  startSet13 :: Types.ReducibleInequality
+  {- Strictness: m,
+     Unfolding: (Types.ReducibleInequality
+                   TestSets.startSet14
+                   TestSets.endSet51
+                   Types.GreaterEqual) -}
+d8de7b7c4e1170c54b2596394061576c
+  startSet14 ::
+    Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+  {- Unfolding: (TestSets.$sfromList
+                   @ (GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.startSet15) -}
+519ae3355299f02186226187f7e6ed81
+  startSet15 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.startSet11
+                   TestSets.startSet16) -}
+86e35c01ea90f752f1feb5786eca2104
+  startSet16 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.startSet17
+                   (GHC.Types.[] @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int))) -}
+509d09a73deeae824d0874d14e1efce5
+  startSet17 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((TestSets.endSet11, TestSets.startSet18)) -}
+b5d671c4982c5afeb804f0f2457720bc
+  startSet18 :: GHC.Real.Ratio GHC.Types.Int
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Types.Int
+                   TestSets.endSet54
+                   TestSets.endSet6) -}
+1e5b4da6956e80dfa80ea2cb25e79697
+  startSet19 :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.startSet36
+                   TestSets.startSet20) -}
+614d5bf8f028ce67de288c6dbf9e1cb7
+  startSet2 :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.startSet47
+                   TestSets.startSet19) -}
+65ffd8a87d3cba37fd7913f0649f1d8b
+  startSet20 :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.startSet29
+                   TestSets.startSet21) -}
+4a2d705396a17a47d880b6014521dfe1
+  startSet21 :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.startSet22
+                   (GHC.Types.[] @ Types.ReducibleInequality)) -}
+50fe418a51ff555d86188546ec241f76
+  startSet22 :: Types.ReducibleInequality
+  {- Strictness: m,
+     Unfolding: (Types.ReducibleInequality
+                   TestSets.startSet23
+                   TestSets.endSet36
+                   Types.GreaterEqual) -}
+93c4e3301f308307e97d7c7070b7d65b
+  startSet23 ::
+    Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+  {- Unfolding: (TestSets.$sfromList
+                   @ (GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.startSet24) -}
+8b16cb67c3803454d043b76b38294735
+  startSet24 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.startSet28
+                   TestSets.startSet25) -}
+0b54720ea7a605ff4dff0822a1da6f69
+  startSet25 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.startSet26
+                   TestSets.endSet19) -}
+aeabae4a9fcfa1be9791c7aeac76df05
+  startSet26 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((TestSets.endSet11, TestSets.startSet27)) -}
+f40da413cc0f206bd0be32945db8bf4d
+  startSet27 :: GHC.Real.Ratio GHC.Types.Int
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Types.Int
+                   TestSets.endSet43
+                   TestSets.endSet6) -}
+d6713b7947b045980523b7f828823181
+  startSet28 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((TestSets.startSet12, TestSets.endSet21)) -}
+5e920e5ac7c5e270c6c9ecb59704b617
+  startSet29 :: Types.ReducibleInequality
+  {- Strictness: m,
+     Unfolding: (Types.ReducibleInequality
+                   TestSets.startSet30
+                   TestSets.startSet6
+                   Types.GreaterEqual) -}
+f15ca4f385acc5ed6251144a11999b62
+  startSet2_dt :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# -7#) -}
+83c34e920f39e4e6cbb34e0267feec57
+  startSet3 :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.startSet63
+                   TestSets.startSet57) -}
+06a358da453c8e997975cb4ab7e8f248
+  startSet30 ::
+    Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+  {- Unfolding: (TestSets.$sfromList
+                   @ (GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.startSet31) -}
+a88b10b6c86da4d8b95a24bfb457f833
+  startSet31 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.startSet35
+                   TestSets.startSet32) -}
+a449eabae8aa63c52dc5326e2ce34c99
+  startSet32 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.startSet33
+                   TestSets.endSet39) -}
+ac55ff30f9c7deaf61b7d7733347c030
+  startSet33 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((TestSets.endSet11, TestSets.startSet34)) -}
+6cb69c0188258e1a07cc7d4b4572ba56
+  startSet34 :: GHC.Real.Ratio GHC.Types.Int
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Types.Int
+                   TestSets.endSet55
+                   TestSets.endSet6) -}
+ecdd0b7ae1a76ec330943fdcabcaa13e
+  startSet35 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((TestSets.startSet12, TestSets.endSet45)) -}
+d9a7de7d19ece154cbdea5d750b7ffb0
+  startSet36 :: Types.ReducibleInequality
+  {- Strictness: m,
+     Unfolding: (Types.ReducibleInequality
+                   TestSets.startSet38
+                   TestSets.startSet37
+                   Types.GreaterEqual) -}
+42325eb4477a318414e1cff5c35cde5c
+  startSet37 :: GHC.Real.Ratio GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Types.Int
+                   TestSets.endEndSet2_dt
+                   TestSets.endSet6) -}
+b1936d417a1c1784c57ecbdef9c9695d
+  startSet38 ::
+    Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+  {- Unfolding: (TestSets.$sfromList
+                   @ (GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.startSet39) -}
+9408faad01dcabc927da7d162ed3b450
+  startSet39 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.startSet45
+                   TestSets.startSet40) -}
+781149fe3654e5a1284d3ebfc2a1ef8d
+  startSet4 :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.startSet71
+                   TestSets.startSet65) -}
+140f82562c025bf933cebaac262f0e09
+  startSet40 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.startSet10
+                   TestSets.startSet41) -}
+7c92220d05d90d72885812f7a0cf7bb7
+  startSet41 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.startSet42
+                   (GHC.Types.[] @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int))) -}
+92f3f57fc687fd5fc90cf90ba6f8ac00
+  startSet42 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((TestSets.endEndSet13, TestSets.startSet43)) -}
+0698048fc0850fe2ee24cf7d1d44ea50
+  startSet43 :: GHC.Real.Ratio GHC.Types.Int
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Types.Int
+                   TestSets.startSet44
+                   TestSets.endSet6) -}
+ced94fbd7cfeb03cd3bd3732c429243e
+  startSet44 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# -6#) -}
+9606b36b3cbec9e6879c8eebc641c01c
+  startSet45 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((TestSets.startSet12, TestSets.startSet46)) -}
+3cf0e7e189fb549df093510350c6700b
+  startSet46 :: GHC.Real.Ratio GHC.Types.Int
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Types.Int
+                   TestSets.endSet25
+                   TestSets.endSet6) -}
+5c8755a53ea5ad58024130bd04da3d41
+  startSet47 :: Types.ReducibleInequality
+  {- Strictness: m,
+     Unfolding: (Types.ReducibleInequality
+                   TestSets.startSet49
+                   TestSets.startSet48
+                   Types.GreaterEqual) -}
+e9bf249051f8e228b270a286a861e158
+  startSet48 :: GHC.Real.Ratio GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Types.Int
+                   TestSets.startSet2_dt
+                   TestSets.endSet6) -}
+f18fca3d359914b5f627a1607485df62
+  startSet49 ::
+    Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+  {- Unfolding: (TestSets.$sfromList
+                   @ (GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.startSet50) -}
+73581fa9e5b53b27baf2c1b39a840e7f
+  startSet5 :: Types.ReducibleInequality
+  {- Strictness: m,
+     Unfolding: (Types.ReducibleInequality
+                   TestSets.startSet7
+                   TestSets.startSet6
+                   Types.LessEqual) -}
+f8e5fb2448a577c73f0215d730e6aee1
+  startSet50 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.startSet11
+                   TestSets.startSet51) -}
+af85ccaa078ac58c2542bde8adcf7df2
+  startSet51 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.startSet54
+                   TestSets.startSet52) -}
+1ccb256a787d53bf734c77386fb5ad89
+  startSet52 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.startSet53
+                   (GHC.Types.[] @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int))) -}
+bb8164aada4d8b28c02937df8c700367
+  startSet53 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((TestSets.endEndSet13, TestSets.startSet18)) -}
+0f0294b09f670edae359ade963a70e60
+  startSet54 :: (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((TestSets.endSet11, TestSets.startSet55)) -}
+5066743236f95958eb0b472fd1a5db48
+  startSet55 :: GHC.Real.Ratio GHC.Types.Int
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Types.Int
+                   TestSets.startSet56
+                   TestSets.endSet6) -}
+b4163f8ae5b33c65077a7d31faf965a4
+  startSet56 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# -5#) -}
+5b04425cf7d8e72f1005d1fb44817bed
+  startSet57 :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.startSet61
+                   TestSets.startSet58) -}
+3ddec29876127be924769469ccd2bd5d
+  startSet58 :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.startSet59
+                   (GHC.Types.[] @ Types.ReducibleInequality)) -}
+a8be04ad7a262e549b411d94ee86ba24
+  startSet59 :: Types.ReducibleInequality
+  {- Unfolding: (case Util.$wprs
+                        TestSets.startSet60 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Types.ReducibleInequality ww1 ww2 ww3 }) -}
+b9be8997f880f1449032e860b30861f1
+  startSet6 :: GHC.Real.Ratio GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Real.:%
+                   @ GHC.Types.Int
+                   TestSets.startSet_dt
+                   TestSets.endSet6) -}
+a5768ae6dc089352de8271d361d05e36
+  startSet60 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "1y >= 20 -1x"#) -}
+0ad6fc6cf2929b2526b64a962b0bd0b8
+  startSet61 :: Types.ReducibleInequality
+  {- Unfolding: (case Util.$wprs
+                        TestSets.startSet62 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Types.ReducibleInequality ww1 ww2 ww3 }) -}
+a4f398c6589e5b4e7d9664643cf81e6a
+  startSet62 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "1y >= 1x -10"#) -}
+7acd948c2d66fabf529c6fc804bda04a
+  startSet63 :: Types.ReducibleInequality
+  {- Unfolding: (case Util.$wprs
+                        TestSets.startSet64 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Types.ReducibleInequality ww1 ww2 ww3 }) -}
+89e7c362ff45be07a4e88f0965326396
+  startSet64 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "1y <= 15"#) -}
+331f48e576fea8236642bf9e36367faa
+  startSet65 :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.startSet69
+                   TestSets.startSet66) -}
+c1fdc4314ba27698774523850f4eca63
+  startSet66 :: [Types.ReducibleInequality]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Types.ReducibleInequality
+                   TestSets.startSet67
+                   (GHC.Types.[] @ Types.ReducibleInequality)) -}
+5744e3986e2ec6831ab7040707e7db07
+  startSet67 :: Types.ReducibleInequality
+  {- Unfolding: (case Util.$wprs
+                        TestSets.startSet68 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Types.ReducibleInequality ww1 ww2 ww3 }) -}
+1f02f36da880759bb943dac27410da3f
+  startSet68 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "1x >= 15"#) -}
+a16ca336cb7fe644383c5ca0cb4ec37f
+  startSet69 :: Types.ReducibleInequality
+  {- Unfolding: (case Util.$wprs
+                        TestSets.startSet70 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Types.ReducibleInequality ww1 ww2 ww3 }) -}
+a95748886f9c2c5928978d01ca644034
+  startSet7 ::
+    Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+  {- Unfolding: (TestSets.$sfromList
+                   @ (GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.startSet8) -}
+17220716c838867f0e1c120466b5605a
+  startSet70 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "2x < 2y"#) -}
+2d279e55965ba1d36fdc78a2e9be4eee
+  startSet71 :: Types.ReducibleInequality
+  {- Unfolding: (case Util.$wprs
+                        TestSets.startSet72 of ww { (#,,#) ww1 ww2 ww3 ->
+                 Types.ReducibleInequality ww1 ww2 ww3 }) -}
+6fd19eaf37b93657674ea3dc0ae2edd2
+  startSet72 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "1y < 10"#) -}
+f6ef1e4045458259f9afb7999ec98edf
+  startSet8 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.startSet11
+                   TestSets.startSet9) -}
+ce08e2f05744d4d457f56d95123460bc
+  startSet9 :: [(GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int)
+                   TestSets.startSet10
+                   (GHC.Types.[] @ (GHC.Types.Char, GHC.Real.Ratio GHC.Types.Int))) -}
+34792919889d95dac48d6ddf027aa22c
+  startSet_dt :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 10#) -}
+"SPEC/TestSets fromList @ Char _" [ALWAYS] forall @ a
+                                                  ($dOrd :: GHC.Classes.Ord GHC.Types.Char)
+  Data.Map.Base.fromList @ GHC.Types.Char @ a $dOrd
+  = TestSets.$sfromList @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

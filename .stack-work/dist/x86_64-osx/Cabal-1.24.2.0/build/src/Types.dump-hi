@@ -1,0 +1,1054 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-04 03:08:29.337 UTC
+
+interface FMelim-0.1.0.0-Dwt0JLLziKE78FhUvX5sRQ:Types 8002
+  interface hash: f49c130cf1980cd06adcffb06757d8cb
+  ABI hash: 8b3373d17522cbc7f23f8a033d6338f9
+  export-list hash: eeab01c32eb63d033d37a8e8cf1f546b
+  orphan hash: 6960e2049cc8d0163e6c94777b1a14df
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Types.EquationSet
+  Types.InequalityType{Types.Equation Types.GreaterEqual Types.GreaterThan Types.LessEqual Types.LessThan}
+  Types.RawInequality{Types.RawInequality}
+  Types.ReducibleInequality{Types.ReducibleInequality constant inequalityType leftSide}
+  Types.Side
+  Types.Token{Types.ConstantToken Types.VarToken}
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
+import  -/  base-4.9.1.0:Data.Ratio 73e2d5dd51ef6c1a1767a580e2cd7459
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 0fd5c8559af8bc4b6f38b9cf9ba5a467
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base 8b155a212edaca6c85bcefe65a8bc505
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+9a7b4599b6cbc0146106b71e712d8e49
+  $fEqInequalityType :: GHC.Classes.Eq Types.InequalityType
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Types.InequalityType
+                  Types.$fEqInequalityType_$c==
+                  Types.$fEqInequalityType_$c/= -}
+9a7b4599b6cbc0146106b71e712d8e49
+  $fEqInequalityType_$c/= ::
+    Types.InequalityType -> Types.InequalityType -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Types.InequalityType)
+                   (b :: Types.InequalityType) ->
+                 case a of wild {
+                   Types.LessThan
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Types.LessThan -> GHC.Types.False }
+                   Types.GreaterThan
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Types.GreaterThan -> GHC.Types.False }
+                   Types.LessEqual
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Types.LessEqual -> GHC.Types.False }
+                   Types.GreaterEqual
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Types.GreaterEqual -> GHC.Types.False }
+                   Types.Equation
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Types.Equation -> GHC.Types.False } }) -}
+9a7b4599b6cbc0146106b71e712d8e49
+  $fEqInequalityType_$c== ::
+    Types.InequalityType -> Types.InequalityType -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Types.InequalityType)
+                   (ds1 :: Types.InequalityType) ->
+                 case ds of wild {
+                   Types.LessThan
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Types.LessThan -> GHC.Types.True }
+                   Types.GreaterThan
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Types.GreaterThan -> GHC.Types.True }
+                   Types.LessEqual
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Types.LessEqual -> GHC.Types.True }
+                   Types.GreaterEqual
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Types.GreaterEqual -> GHC.Types.True }
+                   Types.Equation
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Types.Equation -> GHC.Types.True } }) -}
+17d14a25df5f4b0f82caeae6e9fa25f0
+  $fEqRawInequality :: GHC.Classes.Eq Types.RawInequality
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Types.RawInequality
+                  Types.$fEqRawInequality_$c==
+                  Types.$fEqRawInequality_$c/= -}
+17d14a25df5f4b0f82caeae6e9fa25f0
+  $fEqRawInequality_$c/= ::
+    Types.RawInequality -> Types.RawInequality -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLL),1*U(1*U,1*U,1*U)><S(SLL),1*U(1*U,1*U,1*U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Types.RawInequality) (b :: Types.RawInequality) ->
+                 case Types.$fEqRawInequality_$c== a b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+17d14a25df5f4b0f82caeae6e9fa25f0
+  $fEqRawInequality_$c== ::
+    Types.RawInequality -> Types.RawInequality -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SLL),1*U(1*U,1*U,1*U)><S(SLL),1*U(1*U,1*U,1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Types.RawInequality) (w1 :: Types.RawInequality) ->
+                 case w of ww { Types.RawInequality ww1 ww2 ww3 ->
+                 case w1 of ww4 { Types.RawInequality ww5 ww6 ww7 ->
+                 Types.$w$c== ww1 ww2 ww3 ww5 ww6 ww7 } }) -}
+5183b6fb7d16ee592294058a7a6086d4
+  $fEqReducibleInequality :: GHC.Classes.Eq Types.ReducibleInequality
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Types.ReducibleInequality
+                  Types.$fEqReducibleInequality_$c==
+                  Types.$fEqReducibleInequality_$c/= -}
+ffa6b4f67dd03f9234cd9b9c5bea0665
+  $fEqReducibleInequality1 ::
+    Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+    -> Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+    -> GHC.Types.Bool
+  {- Unfolding: (Data.Map.Base.$fEqMap_$c==
+                   @ GHC.Types.Char
+                   @ (GHC.Real.Ratio GHC.Types.Int)
+                   GHC.Classes.$fEqChar
+                   Types.$fEqReducibleInequality_$s$fEqRatio) -}
+5183b6fb7d16ee592294058a7a6086d4
+  $fEqReducibleInequality_$c/= ::
+    Types.ReducibleInequality
+    -> Types.ReducibleInequality -> GHC.Types.Bool
+  {- Arity: 2,
+     Strictness: <S,1*U(U,1*U(U(U),U(U)),1*U)><S,1*U(U,1*U(U(U),U(U)),1*U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Types.ReducibleInequality)
+                   (b :: Types.ReducibleInequality) ->
+                 case Types.$fEqReducibleInequality_$c== a b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+5183b6fb7d16ee592294058a7a6086d4
+  $fEqReducibleInequality_$c== ::
+    Types.ReducibleInequality
+    -> Types.ReducibleInequality -> GHC.Types.Bool
+  {- Arity: 2,
+     Strictness: <S,1*U(U,1*U(U(U),U(U)),1*U)><S,1*U(U,1*U(U(U),U(U)),1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Types.ReducibleInequality)
+                   (w1 :: Types.ReducibleInequality) ->
+                 case w of ww { Types.ReducibleInequality ww1 ww2 ww3 ->
+                 case w1 of ww4 { Types.ReducibleInequality ww5 ww6 ww7 ->
+                 Types.$w$c==1 ww1 ww2 ww3 ww5 ww6 ww7 } }) -}
+04f28673b12d0ba5a4acca19ffb0b1a8
+  $fEqReducibleInequality_$s$fEqRatio ::
+    GHC.Classes.Eq (GHC.Real.Ratio GHC.Types.Int)
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (GHC.Real.Ratio GHC.Types.Int)
+                  (GHC.Real.$fEqRatio_$c== @ GHC.Types.Int GHC.Classes.$fEqInt)
+                  Types.$fEqReducibleInequality_$s$fEqRatio_$c/= -}
+36b256b2a44eb433528446cb236ba033
+  $fEqReducibleInequality_$s$fEqRatio_$c/= ::
+    GHC.Real.Ratio GHC.Types.Int
+    -> GHC.Real.Ratio GHC.Types.Int -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(S(S)S),1*U(U(U),U(U))><S(S(S)S),1*U(U(U),U(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a1 :: GHC.Real.Ratio GHC.Types.Int)
+                   (b :: GHC.Real.Ratio GHC.Types.Int) ->
+                 case GHC.Real.$fEqRatio_$c==
+                        @ GHC.Types.Int
+                        GHC.Classes.$fEqInt
+                        a1
+                        b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+fcffc5132dda09e25b3d1cceb02c8583
+  $fEqToken :: GHC.Classes.Eq Types.Token
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Types.Token Types.$fEqToken_$c== Types.$fEqToken_$c/= -}
+fcffc5132dda09e25b3d1cceb02c8583
+  $fEqToken_$c/= :: Types.Token -> Types.Token -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Types.Token) (b :: Types.Token) ->
+                 case Types.$fEqToken_$c== a b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+fcffc5132dda09e25b3d1cceb02c8583
+  $fEqToken_$c== :: Types.Token -> Types.Token -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Types.Token) (ds1 :: Types.Token) ->
+                 case ds of wild {
+                   Types.VarToken a1 a2
+                   -> case ds1 of wild1 {
+                        Types.VarToken b1 b2
+                        -> case a1 of wild2 { GHC.Types.I# x ->
+                           case b1 of wild3 { GHC.Types.I# y ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.==# x y) of wild4 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True -> GHC.Classes.eqChar a2 b2 } } }
+                        Types.ConstantToken ipv -> GHC.Types.False }
+                   Types.ConstantToken a1
+                   -> case ds1 of wild1 {
+                        Types.VarToken ipv ipv1 -> GHC.Types.False
+                        Types.ConstantToken b1 -> GHC.Classes.eqInt a1 b1 } }) -}
+9a7b4599b6cbc0146106b71e712d8e49
+  $fShowInequalityType :: GHC.Show.Show Types.InequalityType
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Types.InequalityType
+                  Types.$fShowInequalityType_$cshowsPrec
+                  Types.$fShowInequalityType_$cshow
+                  Types.$fShowInequalityType_$cshowList -}
+3e24d1909c00d368f7d59cba5c05a92e
+  $fShowInequalityType1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Equation"#) -}
+d269e62e748b7e57768feaf48a95e886
+  $fShowInequalityType2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "GreaterEqual"#) -}
+1b4040561d70c0b5a518b0a490ff7cbf
+  $fShowInequalityType3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "LessEqual"#) -}
+2e62dc180f3cd5f0b08bf73972e6027f
+  $fShowInequalityType4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "GreaterThan"#) -}
+d3326a40ff9033a83a6b59adc1bf0678
+  $fShowInequalityType5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "LessThan"#) -}
+9a7b4599b6cbc0146106b71e712d8e49
+  $fShowInequalityType_$cshow ::
+    Types.InequalityType -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Types.InequalityType) ->
+                 Types.$fShowInequalityType_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+9a7b4599b6cbc0146106b71e712d8e49
+  $fShowInequalityType_$cshowList ::
+    [Types.InequalityType] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Types.InequalityType
+                   Types.$w$cshowsPrec) -}
+9a7b4599b6cbc0146106b71e712d8e49
+  $fShowInequalityType_$cshowsPrec ::
+    GHC.Types.Int -> Types.InequalityType -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Types.InequalityType)
+                   (w2 :: GHC.Base.String) ->
+                 Types.$w$cshowsPrec w1 w2) -}
+17d14a25df5f4b0f82caeae6e9fa25f0
+  $fShowRawInequality :: GHC.Show.Show Types.RawInequality
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Types.RawInequality
+                  Types.$fShowRawInequality_$cshowsPrec
+                  Types.$fShowRawInequality_$cshow
+                  Types.$fShowRawInequality_$cshowList -}
+17d14a25df5f4b0f82caeae6e9fa25f0
+  $fShowRawInequality1 :: Types.RawInequality -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ (w :: Types.RawInequality) (w1 :: GHC.Base.String) ->
+                 case w of ww { Types.RawInequality ww1 ww2 ww3 ->
+                 Types.$w$cshowsPrec1 0# ww1 ww2 ww3 w1 }) -}
+58e2a05c2fb77811a8eeb03e9a2c04ec
+  $fShowRawInequality2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ConstantToken "#) -}
+aed828c8c5d0df1abd7deda9a9722740
+  $fShowRawInequality3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "VarToken "#) -}
+fcffc5132dda09e25b3d1cceb02c8583
+  $fShowRawInequality4 :: Types.Token -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ (w :: Types.Token) (w1 :: GHC.Base.String) ->
+                 Types.$w$cshowsPrec2 0# w w1) -}
+2ac9546861b5aa3eb621d99c8063e660
+  $fShowRawInequality5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "RawInequality "#) -}
+17d14a25df5f4b0f82caeae6e9fa25f0
+  $fShowRawInequality_$cshow ::
+    Types.RawInequality -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Types.RawInequality) ->
+                 Types.$fShowRawInequality_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+17d14a25df5f4b0f82caeae6e9fa25f0
+  $fShowRawInequality_$cshowList ::
+    [Types.RawInequality] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Types.RawInequality
+                   Types.$fShowRawInequality1) -}
+17d14a25df5f4b0f82caeae6e9fa25f0
+  $fShowRawInequality_$cshowsPrec ::
+    GHC.Types.Int -> Types.RawInequality -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U(1*U,1*U,1*U)><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Types.RawInequality)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { Types.RawInequality ww3 ww4 ww5 ->
+                 Types.$w$cshowsPrec1 ww1 ww3 ww4 ww5 w2 } }) -}
+5183b6fb7d16ee592294058a7a6086d4
+  $fShowReducibleInequality ::
+    GHC.Show.Show Types.ReducibleInequality
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Types.ReducibleInequality
+                  Types.$fShowReducibleInequality_$cshowsPrec
+                  Types.$fShowReducibleInequality_$cshow
+                  Types.$fShowReducibleInequality_$cshowList -}
+5183b6fb7d16ee592294058a7a6086d4
+  $fShowReducibleInequality1 ::
+    Types.ReducibleInequality -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (x :: Types.ReducibleInequality)
+                   (s :: GHC.Base.String)[OneShot] ->
+                 case x of ww { Types.ReducibleInequality ww1 ww2 ww3 ->
+                 GHC.Base.++ @ GHC.Types.Char (Types.$w$cshow ww1 ww2 ww3) s }) -}
+6245aa90c0e2b0669707e42619e3033b
+  $fShowReducibleInequality10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Types.$fShowReducibleInequality11
+                   Types.$fShowReducibleInequality4) -}
+b84f9ffb643e6f662fcd0590e3d0baa4
+  $fShowReducibleInequality11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ">"#) -}
+3bf933f0d1d0b15deee8bd08b882614b
+  $fShowReducibleInequality12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Types.$fShowReducibleInequality13
+                   Types.$fShowReducibleInequality4) -}
+2e79bd8f376330cbf004f36573f6fc80
+  $fShowReducibleInequality13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "<"#) -}
+139a35db8fe8cf92727d910006c8ae53
+  $fShowReducibleInequality2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "+"#) -}
+ac815631231ec8fd12c4d7822c4b2507
+  $fShowReducibleInequality3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Types.$fShowReducibleInequality5
+                   Types.$fShowReducibleInequality4) -}
+01dd4cef899ba902881321382e05ccbb
+  $fShowReducibleInequality4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# " 0"#) -}
+06c6983d6ff834160afb18f9409eb4aa
+  $fShowReducibleInequality5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "="#) -}
+ef4e4a68027b50c91eba515e33db9694
+  $fShowReducibleInequality6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Types.$fShowReducibleInequality7
+                   Types.$fShowReducibleInequality4) -}
+1a9fa6377d1c47fbf794fa744a1b296d
+  $fShowReducibleInequality7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ">="#) -}
+804d56980465695f04aeab1216c3cdd1
+  $fShowReducibleInequality8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Types.$fShowReducibleInequality9
+                   Types.$fShowReducibleInequality4) -}
+93aab2c9a6bc99cbf4db846f8d7e2710
+  $fShowReducibleInequality9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "<="#) -}
+5183b6fb7d16ee592294058a7a6086d4
+  $fShowReducibleInequality_$cshow ::
+    Types.ReducibleInequality -> GHC.Base.String
+  {- Arity: 1, Strictness: <S(SLL),1*U(1*U,1*U(U(U),U(U)),1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Types.ReducibleInequality) ->
+                 case w of ww { Types.ReducibleInequality ww1 ww2 ww3 ->
+                 Types.$w$cshow ww1 ww2 ww3 }) -}
+5183b6fb7d16ee592294058a7a6086d4
+  $fShowReducibleInequality_$cshowList ::
+    [Types.ReducibleInequality] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ (ls :: [Types.ReducibleInequality])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Types.ReducibleInequality
+                   Types.$fShowReducibleInequality1
+                   ls
+                   s) -}
+5183b6fb7d16ee592294058a7a6086d4
+  $fShowReducibleInequality_$cshowsPrec ::
+    GHC.Types.Int -> Types.ReducibleInequality -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <L,A><S(SLL),1*U(1*U,1*U(U(U),U(U)),1*U)><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int)
+                   (x :: Types.ReducibleInequality)
+                   (s :: GHC.Base.String) ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      (Types.$fShowReducibleInequality_$cshow x))
+                   s) -}
+5eab9e762b833e561a32750d6ea16865
+  $fShowReducibleInequality_dt :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+48b2944d69224daa522623e5c659b10c
+  $fShowReducibleInequality_dt1 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+86cd9982e910f767f7d4f1e469555cb1
+  $fShowReducibleInequality_go10 ::
+    [GHC.Types.Char]
+    -> Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+    -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <L,1*U><S,1*U> -}
+fcffc5132dda09e25b3d1cceb02c8583
+  $fShowToken :: GHC.Show.Show Types.Token
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Types.Token
+                  Types.$fShowToken_$cshowsPrec
+                  Types.$fShowToken_$cshow
+                  Types.$fShowToken_$cshowList -}
+fcffc5132dda09e25b3d1cceb02c8583
+  $fShowToken_$cshow :: Types.Token -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Types.Token) ->
+                 Types.$fShowToken_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+fcffc5132dda09e25b3d1cceb02c8583
+  $fShowToken_$cshowList :: [Types.Token] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Types.Token
+                   Types.$fShowRawInequality4) -}
+fcffc5132dda09e25b3d1cceb02c8583
+  $fShowToken_$cshowsPrec ::
+    GHC.Types.Int -> Types.Token -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Types.Token)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Types.$w$cshowsPrec2 ww1 w1 w2 }) -}
+a5db32aeefdfbf497cb2f39d464e6001
+  $tc'ConstantToken :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15706434249899267635##
+                   2015178333236546987##
+                   Types.$trModule
+                   Types.$tc'ConstantToken1) -}
+ebebe70ffc1433faa5bfb01e66696c51
+  $tc'ConstantToken1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ConstantToken"#) -}
+7fc3ead3314905051eb51f0131afa80b
+  $tc'Equation :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2785224567718404661##
+                   15392631162276569682##
+                   Types.$trModule
+                   Types.$tc'Equation1) -}
+7252cd47426f39a1e2b6c4a2f30ce23a
+  $tc'Equation1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Equation"#) -}
+2f17431263ae55150ff1c647b7fb5b5a
+  $tc'GreaterEqual :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16621053031984255966##
+                   10017731933666568937##
+                   Types.$trModule
+                   Types.$tc'GreaterEqual1) -}
+0538f5c57cdedc93096e00816996d8f0
+  $tc'GreaterEqual1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'GreaterEqual"#) -}
+300103b0c6d87738bed2feb522eae12e
+  $tc'GreaterThan :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10806981525630807235##
+                   6692883099433925960##
+                   Types.$trModule
+                   Types.$tc'GreaterThan1) -}
+559b0444a2b4367062ce836bd15de235
+  $tc'GreaterThan1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'GreaterThan"#) -}
+2cbeae058a4065cd21a9e07f3b1486a9
+  $tc'LessEqual :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15983125354757259982##
+                   7162070973210506893##
+                   Types.$trModule
+                   Types.$tc'LessEqual1) -}
+8e5a37f171d85b129c42f2fdf3f0c13c
+  $tc'LessEqual1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'LessEqual"#) -}
+34c983c2b4bee6a3f6f4fb6b4b91bd68
+  $tc'LessThan :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5017439081613033623##
+                   2160177406622855669##
+                   Types.$trModule
+                   Types.$tc'LessThan1) -}
+45d50c6c4390660e1f128de779ed1ac0
+  $tc'LessThan1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'LessThan"#) -}
+bb3a7817a8385c20318b02bc12d94480
+  $tc'RawInequality :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11013884499457637556##
+                   9868308464899127431##
+                   Types.$trModule
+                   Types.$tc'RawInequality1) -}
+023431fe7a77d16d362a521bea3883d9
+  $tc'RawInequality1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'RawInequality"#) -}
+c2e41acc0d5888fd09b09ef7ba8c8f78
+  $tc'ReducibleInequality :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15492550669609948424##
+                   7691805858550760620##
+                   Types.$trModule
+                   Types.$tc'ReducibleInequality1) -}
+f04a266b7edcec1c142de025c075b127
+  $tc'ReducibleInequality1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'ReducibleInequality"#) -}
+1b8a05c6d88428c7bc4987fe55bccf3a
+  $tc'VarToken :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8731834931603334153##
+                   3782878137604449604##
+                   Types.$trModule
+                   Types.$tc'VarToken1) -}
+abda4f517250e0fa238d9c3178c3396d
+  $tc'VarToken1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'VarToken"#) -}
+16a0d81389e181d49160ec2f33d044a6
+  $tcInequalityType :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2865987042474420888##
+                   12636801050571059408##
+                   Types.$trModule
+                   Types.$tcInequalityType1) -}
+2f8b1f0531b05613b873bf7899547b15
+  $tcInequalityType1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "InequalityType"#) -}
+b65d5534138d85c2029d5777a279a656
+  $tcRawInequality :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3693095532437397668##
+                   18431798624609904398##
+                   Types.$trModule
+                   Types.$tcRawInequality1) -}
+dc018b5e0beacc6ad1274a2b1e0d4afe
+  $tcRawInequality1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "RawInequality"#) -}
+11c6b7708482e03999795fd957f9db04
+  $tcReducibleInequality :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3232616452969907742##
+                   14227306628781820386##
+                   Types.$trModule
+                   Types.$tcReducibleInequality1) -}
+e16ba788f3a5d7e743adfa3045e1e732
+  $tcReducibleInequality1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "ReducibleInequality"#) -}
+f93bed182021545134c42055d120f92e
+  $tcToken :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13023741451968768247##
+                   14228994703566804611##
+                   Types.$trModule
+                   Types.$tcToken1) -}
+4259966641d16985316dea173ca782d7
+  $tcToken1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Token"#) -}
+1ee5d66f3788f27229a56fd27b993cec
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Types.$trModule2 Types.$trModule1) -}
+6df99d91585647883c2bb1e996ebc26f
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Types"#) -}
+ed31dd8205cbb5127a1912081dd7f13e
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "FMelim-0.1.0.0-Dwt0JLLziKE78FhUvX5sRQ"#) -}
+5e90e3fb3529b9d559334289674a255c
+  $w$c== ::
+    Types.Side
+    -> Types.Side
+    -> GHC.Base.String
+    -> Types.Side
+    -> Types.Side
+    -> GHC.Base.String
+    -> GHC.Types.Bool
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U><L,1*U><S,1*U><L,1*U><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: Types.Side)
+                   (ww1 :: Types.Side)
+                   (ww2 :: GHC.Base.String)
+                   (ww3 :: Types.Side)
+                   (ww4 :: Types.Side)
+                   (ww5 :: GHC.Base.String) ->
+                 case GHC.Classes.$fEq[]_$c==
+                        @ Types.Token
+                        Types.$fEqToken
+                        ww
+                        ww3 of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> case GHC.Classes.$fEq[]_$c==
+                             @ Types.Token
+                             Types.$fEqToken
+                             ww1
+                             ww4 of wild1 {
+                        GHC.Types.False -> GHC.Types.False
+                        GHC.Types.True -> GHC.Base.eqString ww2 ww5 } }) -}
+f5b3d7e8f6ca57905099065fceffffdd
+  $w$c==1 ::
+    Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+    -> GHC.Real.Ratio GHC.Types.Int
+    -> Types.InequalityType
+    -> Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+    -> GHC.Real.Ratio GHC.Types.Int
+    -> Types.InequalityType
+    -> GHC.Types.Bool
+  {- Arity: 6,
+     Strictness: <L,U><L,1*U(U(U),U(U))><L,1*U><L,U><L,1*U(U(U),U(U))><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: Data.Map.Base.Map
+                            GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int))
+                   (ww1 :: GHC.Real.Ratio GHC.Types.Int)
+                   (ww2 :: Types.InequalityType)
+                   (ww3 :: Data.Map.Base.Map
+                             GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int))
+                   (ww4 :: GHC.Real.Ratio GHC.Types.Int)
+                   (ww5 :: Types.InequalityType) ->
+                 case Types.$fEqReducibleInequality1 ww ww3 of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> case ww1 of ww6 { GHC.Real.:% ww7 ww8 ->
+                      case ww7 of wild1 { GHC.Types.I# x ->
+                      case ww8 of wild2 { GHC.Types.I# x1 ->
+                      case ww4 of ww9 { GHC.Real.:% ww10 ww11 ->
+                      case ww10 of wild3 { GHC.Types.I# y ->
+                      case ww11 of wild4 { GHC.Types.I# y1 ->
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.==# x y) of wild5 {
+                        GHC.Types.False -> GHC.Types.False
+                        GHC.Types.True
+                        -> case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.==# x1 y1) of wild6 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True
+                             -> Types.$fEqInequalityType_$c== ww2 ww5 } } } } } } } } }) -}
+2f803e27926397b8ea4947f74811d3d0
+  $w$cshow ::
+    Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+    -> GHC.Real.Ratio GHC.Types.Int
+    -> Types.InequalityType
+    -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,1*U><L,1*U(U(U),U(U))><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: Data.Map.Base.Map
+                            GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int))
+                   (ww1 :: GHC.Real.Ratio GHC.Types.Int)
+                   (ww2 :: Types.InequalityType) ->
+                 let {
+                   karg :: [GHC.Types.Char]
+                   = case ww1 of ww3 { GHC.Real.:% ww4 ww5 ->
+                     case ww4 of ww6 { GHC.Types.I# ww7 ->
+                     case ww5 of wild { GHC.Types.I# x ->
+                     let {
+                       arg :: [GHC.Types.Char]
+                       = case GHC.Show.$wshowSignedInt
+                                0#
+                                ww7
+                                (GHC.Types.[] @ GHC.Types.Char) of ww8 { (#,#) ww9 ww10 ->
+                         GHC.Base.++
+                           @ GHC.Types.Char
+                           (GHC.Types.: @ GHC.Types.Char ww9 ww10)
+                           (let {
+                              arg1 :: [GHC.Types.Char]
+                              = GHC.CString.unpackAppendCString#
+                                  " "#
+                                  (case ww2 of wild1 {
+                                     Types.LessThan -> Types.$fShowReducibleInequality12
+                                     Types.GreaterThan -> Types.$fShowReducibleInequality10
+                                     Types.LessEqual -> Types.$fShowReducibleInequality8
+                                     Types.GreaterEqual -> Types.$fShowReducibleInequality6
+                                     Types.Equation -> Types.$fShowReducibleInequality3 })
+                            } in
+                            case x of wild1 {
+                              DEFAULT
+                              -> GHC.CString.unpackAppendCString#
+                                   "/"#
+                                   (case GHC.Show.$wshowSignedInt
+                                           0#
+                                           wild1
+                                           (GHC.Types.[]
+                                              @ GHC.Types.Char) of ww11 { (#,#) ww12 ww13 ->
+                                    GHC.Base.++
+                                      @ GHC.Types.Char
+                                      (GHC.Types.: @ GHC.Types.Char ww12 ww13)
+                                      arg1 })
+                              1# -> arg1 }) }
+                     } in
+                     case GHC.Real.$w$ccompare
+                            @ GHC.Types.Int
+                            GHC.Real.$fIntegralInt
+                            ww6
+                            wild
+                            Types.$fShowReducibleInequality_dt
+                            Types.$fShowReducibleInequality_dt1 of wild1 {
+                       DEFAULT
+                       -> GHC.Base.++
+                            @ GHC.Types.Char
+                            Types.$fShowReducibleInequality2
+                            arg
+                       GHC.Types.LT -> arg } } } }
+                 } in
+                 case Types.$fShowReducibleInequality_go10
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        ww of wild {
+                   []
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        (GHC.Types.[] @ GHC.Types.Char)
+                        karg
+                   : ds1 xs -> GHC.Base.++ @ GHC.Types.Char xs karg }) -}
+9a7b4599b6cbc0146106b71e712d8e49
+  $w$cshowsPrec ::
+    Types.InequalityType -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Types.InequalityType)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Types.LessThan
+                   -> GHC.Base.++ @ GHC.Types.Char Types.$fShowInequalityType5 w1
+                   Types.GreaterThan
+                   -> GHC.Base.++ @ GHC.Types.Char Types.$fShowInequalityType4 w1
+                   Types.LessEqual
+                   -> GHC.Base.++ @ GHC.Types.Char Types.$fShowInequalityType3 w1
+                   Types.GreaterEqual
+                   -> GHC.Base.++ @ GHC.Types.Char Types.$fShowInequalityType2 w1
+                   Types.Equation
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Types.$fShowInequalityType1
+                        w1 }) -}
+53e8114a6e7f49ff93c91926e801f5d3
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int#
+    -> Types.Side
+    -> Types.Side
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 5, Strictness: <S,U><L,1*U><L,1*U><L,1*U><L,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (ww1 :: Types.Side)
+                   (ww2 :: Types.Side)
+                   (ww3 :: GHC.Base.String)
+                   (w :: GHC.Base.String) ->
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,U> -}
+                   = \ (x :: GHC.Base.String)[OneShot] ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       Types.$fShowRawInequality5
+                       (let {
+                          s :: GHC.Base.String
+                          = GHC.Show.showList__
+                              @ Types.Token
+                              Types.$fShowRawInequality4
+                              ww2
+                              (GHC.Types.:
+                                 @ GHC.Types.Char
+                                 GHC.Show.showSpace1
+                                 (GHC.Show.shows_$cshowList1 ww3 x))
+                        } in
+                        let {
+                          s1 :: GHC.Base.String
+                          = GHC.Types.: @ GHC.Types.Char GHC.Show.showSpace1 s
+                        } in
+                        case ww1 of wild {
+                          [] -> GHC.CString.unpackAppendCString# "[]"# s1
+                          : x1 xs
+                          -> GHC.Types.:
+                               @ GHC.Types.Char
+                               GHC.Show.showList__2
+                               (Types.$w$cshowsPrec2
+                                  0#
+                                  x1
+                                  (let {
+                                     lvl27 :: [GHC.Types.Char]
+                                     = GHC.Types.: @ GHC.Types.Char GHC.Show.showList__1 s1
+                                   } in
+                                   letrec {
+                                     showl :: [Types.Token] -> GHC.Base.String
+                                       {- Arity: 1, Strictness: <S,1*U> -}
+                                     = \ (ds2 :: [Types.Token]) ->
+                                       case ds2 of wild1 {
+                                         [] -> lvl27
+                                         : y ys
+                                         -> GHC.Types.:
+                                              @ GHC.Types.Char
+                                              GHC.Show.shows5
+                                              (Types.$w$cshowsPrec2 0# y (showl ys)) }
+                                   } in
+                                   showl xs)) })
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11#) of wild {
+                   GHC.Types.False -> p w
+                   GHC.Types.True
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows7
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 w)) }) -}
+fcffc5132dda09e25b3d1cceb02c8583
+  $w$cshowsPrec2 ::
+    GHC.Prim.Int# -> Types.Token -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><S,1*U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#)
+                   (w :: Types.Token)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Types.VarToken b1 b2
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False
+                        -> GHC.Base.++
+                             @ GHC.Types.Char
+                             Types.$fShowRawInequality3
+                             (case b1 of ww2 { GHC.Types.I# ww3 ->
+                              case GHC.Show.$wshowSignedInt
+                                     11#
+                                     ww3
+                                     (GHC.Types.:
+                                        @ GHC.Types.Char
+                                        GHC.Show.showSpace1
+                                        (case b2 of ww1 { GHC.Types.C# ww5 ->
+                                         GHC.Show.$w$cshowsPrec17
+                                           ww5
+                                           w1 })) of ww4 { (#,#) ww5 ww6 ->
+                              GHC.Types.: @ GHC.Types.Char ww5 ww6 } })
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Types.$fShowRawInequality3
+                                (case b1 of ww2 { GHC.Types.I# ww3 ->
+                                 case GHC.Show.$wshowSignedInt
+                                        11#
+                                        ww3
+                                        (GHC.Types.:
+                                           @ GHC.Types.Char
+                                           GHC.Show.showSpace1
+                                           (case b2 of ww1 { GHC.Types.C# ww5 ->
+                                            GHC.Show.$w$cshowsPrec17
+                                              ww5
+                                              (GHC.Types.:
+                                                 @ GHC.Types.Char
+                                                 GHC.Show.shows4
+                                                 w1) })) of ww4 { (#,#) ww5 ww6 ->
+                                 GHC.Types.: @ GHC.Types.Char ww5 ww6 } })) }
+                   Types.ConstantToken b1
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False
+                        -> GHC.Base.++
+                             @ GHC.Types.Char
+                             Types.$fShowRawInequality2
+                             (case b1 of ww2 { GHC.Types.I# ww3 ->
+                              case GHC.Show.$wshowSignedInt 11# ww3 w1 of ww4 { (#,#) ww5 ww6 ->
+                              GHC.Types.: @ GHC.Types.Char ww5 ww6 } })
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.shows7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                Types.$fShowRawInequality2
+                                (case b1 of ww2 { GHC.Types.I# ww3 ->
+                                 case GHC.Show.$wshowSignedInt
+                                        11#
+                                        ww3
+                                        (GHC.Types.:
+                                           @ GHC.Types.Char
+                                           GHC.Show.shows4
+                                           w1) of ww4 { (#,#) ww5 ww6 ->
+                                 GHC.Types.: @ GHC.Types.Char ww5 ww6 } })) } }) -}
+43055b8553566734bb24ad050c52cb9b
+  type EquationSet = [Types.ReducibleInequality]
+9a7b4599b6cbc0146106b71e712d8e49
+  data InequalityType
+    = LessThan | GreaterThan | LessEqual | GreaterEqual | Equation
+17d14a25df5f4b0f82caeae6e9fa25f0
+  data RawInequality
+    = RawInequality Types.Side Types.Side GHC.Base.String
+5183b6fb7d16ee592294058a7a6086d4
+  data ReducibleInequality
+    = ReducibleInequality {leftSide :: Data.Map.Base.Map
+                                         GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int),
+                           constant :: GHC.Real.Ratio GHC.Types.Int,
+                           inequalityType :: Types.InequalityType}
+d24a1615dd6f5b2ee245cd19b0a9fb02
+  type Side = [Types.Token]
+fcffc5132dda09e25b3d1cceb02c8583
+  data Token
+    = VarToken GHC.Types.Int GHC.Types.Char
+    | ConstantToken GHC.Types.Int
+e98f46cef45d94175cee4af093968a8d
+  constant ::
+    Types.ReducibleInequality -> GHC.Real.Ratio GHC.Types.Int
+  RecSel Left Types.ReducibleInequality
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U(U,U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Types.ReducibleInequality) ->
+                 case ds of wild { Types.ReducibleInequality ds1 ds2 ds3 ->
+                 ds2 }) -}
+c4d1c8f2bd9f8a71f18f78ec56feefaf
+  inequalityType :: Types.ReducibleInequality -> Types.InequalityType
+  RecSel Left Types.ReducibleInequality
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Types.ReducibleInequality) ->
+                 case ds of wild { Types.ReducibleInequality ds1 ds2 ds3 ->
+                 ds3 }) -}
+6fe58cbb64dec8c3d857368607841356
+  leftSide ::
+    Types.ReducibleInequality
+    -> Data.Map.Base.Map GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int)
+  RecSel Left Types.ReducibleInequality
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Types.ReducibleInequality) ->
+                 case ds of wild { Types.ReducibleInequality ds1 ds2 ds3 ->
+                 ds1 }) -}
+instance [safe] GHC.Classes.Eq [Types.InequalityType]
+  = Types.$fEqInequalityType
+instance [safe] GHC.Classes.Eq [Types.RawInequality]
+  = Types.$fEqRawInequality
+instance [safe] GHC.Classes.Eq [Types.ReducibleInequality]
+  = Types.$fEqReducibleInequality
+instance [safe] GHC.Classes.Eq [Types.Token] = Types.$fEqToken
+instance [safe] GHC.Show.Show [Types.InequalityType]
+  = Types.$fShowInequalityType
+instance [safe] GHC.Show.Show [Types.RawInequality]
+  = Types.$fShowRawInequality
+instance [safe] GHC.Show.Show [Types.ReducibleInequality]
+  = Types.$fShowReducibleInequality
+instance [safe] GHC.Show.Show [Types.Token] = Types.$fShowToken
+"SPEC/Types $fEqRatio @ Int" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                        GHC.Types.Int)
+  GHC.Real.$fEqRatio @ GHC.Types.Int $dEq
+  = Types.$fEqReducibleInequality_$s$fEqRatio
+"SPEC/Types $fEqRatio_$c/= @ Int" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                             GHC.Types.Int)
+  GHC.Real.$fEqRatio_$c/= @ GHC.Types.Int $dEq
+  = Types.$fEqReducibleInequality_$s$fEqRatio_$c/=
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

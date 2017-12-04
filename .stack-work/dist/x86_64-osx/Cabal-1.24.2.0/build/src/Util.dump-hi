@@ -1,0 +1,135 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-04 03:08:30.61848 UTC
+
+interface FMelim-0.1.0.0-Dwt0JLLziKE78FhUvX5sRQ:Util 8002
+  interface hash: 484ed3b0fb730fd676246dab24cce98c
+  ABI hash: add2b9a98ba499d7ece66e071f86f40e
+  export-list hash: 4822b31c70131b06b0249d35dc755d68
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Util.fromRight
+  Util.prs
+module dependencies: Lib Parser Types
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      parsec-3.1.11@parsec-3.1.11-1aqiimsgq2dCv7eoaC8WuX
+                      parsec-numbers-0.1.0@parsec-numbers-0.1.0-4q09xIiPuHhIiWaXhS71N5
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+import  -/  Lib 4d08eb2b1a9eb01311257ae74a44b5cc
+  exports: b52cb9b18b4ebe9f6362487eca903dc0
+  normalize 241c1f9ce326ea40c52f755771a99827
+import  -/  Parser ee380d853f7ee9bab40150a2feb2cfbc
+  exports: e68139890557aae6680dcd808e418783
+  parseEquation d6a0c585936fd31a430570b1f00b9e11
+import  -/  base-4.9.1.0:Data.Either 20b09ef8d0a5b74fdec011c40c1587f5
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+3433a974eeb9c918f8e530218a1c3f6f
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Util.$trModule2 Util.$trModule1) -}
+a22d0a06b9948196bb6b30e6fcd615c8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Util"#) -}
+b3323f43aff842d128643a5a2a34f4be
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "FMelim-0.1.0.0-Dwt0JLLziKE78FhUvX5sRQ"#) -}
+3d4c48bd7f33c84198a8169ee54a542c
+  $wprs ::
+    GHC.Base.String
+    -> (# Data.Map.Base.Map
+            GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int),
+          GHC.Real.Ratio GHC.Types.Int, Types.InequalityType #)
+  {- Arity: 1, Strictness: <L,U>, Inline: [0],
+     Unfolding: (\ (w :: GHC.Base.String) ->
+                 case (Text.Parsec.Prim.runPT
+                         @ GHC.Base.String
+                         @ Data.Functor.Identity.Identity
+                         @ GHC.Types.Char
+                         @ ()
+                         @ Types.RawInequality
+                         (Parser.$s$fStream[]mtok @ GHC.Types.Char)
+                         Parser.inequality1
+                           `cast`
+                         (Sym (Text.Parsec.Prim.N:ParsecT[0]
+                                   <[GHC.Types.Char]>_R
+                                   <()>_R
+                                   <Data.Functor.Identity.Identity>_R
+                                   <Types.RawInequality>_R))
+                         GHC.Tuple.()
+                         Parser.parseEquation2
+                         w)
+                        `cast`
+                      (Data.Functor.Identity.N:Identity[0]
+                           <Data.Either.Either
+                              Text.Parsec.Error.ParseError Types.RawInequality>_R) of wild {
+                   Data.Either.Left ipv
+                   -> case Util.fromRight1
+                      ret_ty (# Data.Map.Base.Map
+                                  GHC.Types.Char (GHC.Real.Ratio GHC.Types.Int),
+                                GHC.Real.Ratio GHC.Types.Int, Types.InequalityType #)
+                      of {}
+                   Data.Either.Right x
+                   -> case x of ww { Types.RawInequality ww1 ww2 ww3 ->
+                      Lib.$wnormalize ww1 ww2 ww3 } }) -}
+551a099ecb4a29e041aab9be47bbecef
+  fromRight :: Data.Either.Either t t1 -> t1
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ t @ t1 (ds :: Data.Either.Either t t1) ->
+                 case ds of wild {
+                   Data.Either.Left ipv -> Util.fromRight1 @ t1
+                   Data.Either.Right x -> x }) -}
+a021e0a4262795656b9214d1d094937d
+  fromRight1 :: t
+  {- Strictness: x -}
+b6157f155bb74a9268a082f9ec15f5dc
+  prs :: GHC.Base.String -> Types.ReducibleInequality
+  {- Arity: 1, Strictness: <L,U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Base.String) ->
+                 case Util.$wprs w of ww { (#,,#) ww1 ww2 ww3 ->
+                 Types.ReducibleInequality ww1 ww2 ww3 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
